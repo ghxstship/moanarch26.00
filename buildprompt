@@ -1,0 +1,1612 @@
+# GHXSTSHIP Industries Website - Full Stack Development Brief
+
+## 🎯 Project Overview
+
+Create a full-stack immersive entertainment, experiential marketing, and creative media production agency website for **GHXSTSHIP Industries LLC** (dba GHXSTSHIP). 
+
+**Design Aesthetic:** Contemporary Minimal Pop Art in pure black, white, and greyscale with bold geometric compositions and brutalist typography.
+
+**Inspiration Sources:**
+- Acceleration Community of Companies (https://www.accelerationcc.com/) - Full-screen immersive sections, smooth animations
+- Pink Sparrow (https://www.pinksparrow.com/) - Bold, graphic-forward design, high-energy aesthetic
+
+---
+
+## 🏢 Company Information
+
+**Legal Name:** GHXSTSHIP Industries LLC  
+**DBA:** GHXSTSHIP  
+**Headquarters:** Tampa, FL  
+**Team Structure:** Global Remote  
+**Founded:** December 2022 (Legally organized July 2023)
+
+### Core Verticals
+1. Immersive Entertainment
+2. Experiential Marketing
+3. Creative Media
+4. Integrated Technology
+
+### Service Framework (The 4 D's)
+1. **DESIGN** - Conceptual development & creative strategy
+2. **DEVELOPMENT (PRODUCTION)** - Build, fabricate, produce
+3. **DIRECTION (OPERATIONS)** - Execute, manage, deliver
+4. **DISRUPTION (INNOVATION)** - Push boundaries, create the future
+
+### Avenues of Delivery
+- Digital
+- Virtual
+- Physical
+- Experiential
+- Theatrical
+
+### Products/Platforms
+- **ATLVS** - Experiential Project Management Platform (https://atlvs.one)
+- **GVTEWAY** - Experiential Community Management & Access (Ticketing) - Coming Soon
+
+---
+
+## 🎨 Design System
+
+### Color Palette - MONOCHROMATIC ONLY
+```javascript
+// Tailwind Config - colors
+colors: {
+  black: '#000000',      // Primary backgrounds, bold text, graphic elements
+  white: '#FFFFFF',      // Primary backgrounds, contrast text, highlights
+  grey: {
+    100: '#F5F5F5',      // Lightest grey, subtle backgrounds
+    200: '#E5E5E5',      // Light grey, borders, dividers
+    300: '#D4D4D4',      // Mid-light grey
+    400: '#A3A3A3',      // Medium grey, secondary text
+    500: '#737373',      // Mid grey
+    600: '#525252',      // Mid-dark grey
+    700: '#404040',      // Dark grey
+    800: '#262626',      // Darker grey
+    900: '#171717',      // Almost black, deep backgrounds
+  }
+}
+```
+
+**Usage Rules:**
+- ✅ Backgrounds: Alternate between pure black and pure white for maximum contrast
+- ✅ Text: Black on white, white on black only
+- ✅ Accents: Use grey tones for borders, dividers, subtle backgrounds
+- ✅ Hover States: Invert colors (black ↔ white)
+- ✅ Images: Convert ALL images to duotone/high-contrast B&W
+- ✅ Geometric Shapes: Pure black or white with optional grey fills
+- ❌ NO COLOR: Absolutely no color except black, white, and greyscale
+
+### Typography System
+```javascript
+// Tailwind Config - fontFamily
+fontFamily: {
+  'anton': ['Anton', 'Impact', 'Arial Black', 'sans-serif'],
+  'bebas': ['Bebas Neue', 'Arial Narrow', 'Arial', 'sans-serif'],
+  'share': ['Share Tech', 'Monaco', 'Consolas', 'monospace'],
+  'share-mono': ['Share Tech Mono', 'Courier New', 'Courier', 'monospace'],
+}
+```
+
+#### ANTON - Title & H1
+**Usage:** Main site title, hero headlines, major impact statements  
+**Weight:** Regular (400) - single weight font  
+**Transform:** UPPERCASE preferred  
+**Sizes:**
+- Desktop: 72px - 120px+ (heroes)
+- Mobile: 48px - 72px
+**Line Height:** 0.9 - 1.1 (tight for impact)  
+**Letter Spacing:** -0.02em to 0  
+**Colors:** Pure black or pure white only  
+**Examples:** "GHXSTSHIP", "WE CREATE WORLDS"
+```css
+/* Example CSS */
+.title-hero {
+  font-family: 'Anton', sans-serif;
+  font-size: clamp(48px, 10vw, 120px);
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+```
+
+#### BEBAS NEUE - H2 through H6
+**Usage:** Section headers, subsections, category labels, navigation  
+**Weight:** Regular (400) or Bold (700)  
+**Transform:** UPPERCASE for H2-H3, flexible for H4-H6  
+**Sizes:**
+- H2: 40px - 56px (desktop) / 28px - 36px (mobile)
+- H3: 32px - 40px (desktop) / 24px - 28px (mobile)
+- H4: 24px - 32px (desktop) / 20px - 24px (mobile)
+- H5: 20px - 24px (desktop) / 18px - 20px (mobile)
+- H6: 18px - 20px (desktop) / 16px - 18px (mobile)
+
+**Line Height:** 1.1 - 1.2  
+**Letter Spacing:** 0.02em - 0.04em  
+**Examples:** "DESIGN", "DEVELOPMENT", "SERVICES"
+```css
+/* Example CSS */
+.heading-section {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(28px, 5vw, 56px);
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+```
+
+#### SHARE TECH - Body Copy
+**Usage:** All body copy, paragraphs, descriptions, general content  
+**Weight:** Regular (400) - single weight font  
+**Transform:** Normal (sentence case)  
+**Sizes:**
+- Desktop: 16px - 18px base
+- Mobile: 15px - 16px base
+- Large body: 18px - 20px
+
+**Line Height:** 1.6 - 1.8 (comfortable reading)  
+**Letter Spacing:** 0 to 0.01em  
+**Max Width:** 65-75 characters per line  
+**Examples:** All descriptive paragraphs, service descriptions
+```css
+/* Example CSS */
+.body-text {
+  font-family: 'Share Tech', monospace;
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 70ch;
+}
+```
+
+#### SHARE TECH MONO - Metadata & Subtitles
+**Usage:** Metadata, dates, tags, labels, technical info, captions  
+**Weight:** Regular (400) - single weight font  
+**Transform:** UPPERCASE for labels/tags, normal for captions  
+**Sizes:**
+- Desktop: 12px - 14px
+- Mobile: 11px - 13px
+- Large labels: 14px - 16px
+
+**Line Height:** 1.4 - 1.6  
+**Letter Spacing:** 0.05em - 0.1em  
+**Colors:** Grey 500-600 for metadata, black/white for prominent labels  
+**Examples:** "CLIENT: FORMULA 1", "2024", "TAMPA, FL"
+```css
+/* Example CSS */
+.metadata-label {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 13px;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #525252; /* grey-600 */
+}
+```
+
+#### Typography Hierarchy Example
+```
+ANTON (120px, black, uppercase): GHXSTSHIP
+    ↓
+ANTON (72px, black, uppercase): WE CREATE BEYOND REALITY
+    ↓
+BEBAS NEUE (40px, black, uppercase): IMMERSIVE ENTERTAINMENT
+    ↓
+SHARE TECH (18px, black): We architect impossible experiences that push 
+the boundaries of what audiences expect, transforming abstract concepts 
+into tangible realities.
+    ↓
+SHARE TECH MONO (13px, grey-600, uppercase): 
+TAMPA, FL  //  EST. 2022  //  52+ COUNTRIES
+```
+
+---
+
+## 🏗️ Tech Stack
+
+### Frontend
+- **Framework:** Next.js 14+ (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS with custom design system
+- **Animations:** Framer Motion + GSAP for complex sequences
+- **3D (Optional):** Three.js or React Three Fiber
+
+### Backend
+- **API:** Next.js API Routes or separate Node.js/Express
+- **CMS (Optional):** Sanity, Contentful, or Payload CMS
+
+### Tools & Libraries
+- **Forms:** React Hook Form with validation
+- **Image Processing:** Sharp for duotone/B&W conversion
+- **Analytics:** Plausible or Google Analytics
+
+### Hosting & Deployment
+- **Platform:** Vercel (preferred)
+- **Performance Targets:** Lighthouse 90+ across all metrics
+- **Approach:** SSR/SSG where appropriate for SEO
+
+---
+
+## 📐 Site Structure
+
+### Primary Pages
+
+#### 1. HOMEPAGE
+
+**Hero Section**
+- Full-screen bold graphic composition
+- Large ANTON typography: "GHXSTSHIP"
+- Abstract geometric ghost ship silhouette (black/white/grey layers)
+- Tagline (Bebas Neue): "WE CREATE BEYOND REALITY"
+- High contrast black background with white elements
+- Minimal geometric scroll indicator
+
+**Who We Are**
+- 2-3 sentence intro (Share Tech)
+- Statistics counter (Bebas Neue): "52+ COUNTRIES", "13+ YEARS", "XX PROJECTS"
+- Animated halftone globe or geometric network
+- Bold horizontal rules as dividers
+
+**The 4 D's (Services)**
+- Four full-screen sections (one per D)
+- Bebas Neue headings with geometric icons
+- Share Tech descriptions
+- Alternating black/white backgrounds
+- Bold geometric shapes as backgrounds
+- Hover: scale and contrast shifts
+
+**Verticals Grid**
+- Strong geometric framing
+- Bold black or white cards
+- Duotone imagery per vertical
+- Bebas Neue labels
+- Click to filter projects
+
+**Featured Projects**
+- 3-4 hero projects, asymmetric grid
+- Large duotone imagery with halftone overlays
+- Share Tech Mono metadata
+- Quick facts (Bebas Neue): CLIENT, VERTICAL, YEAR, SCOPE
+- CTA to full case study
+
+**Products/Platforms**
+- Bold graphic blocks for ATLVS and GVTEWAY
+- B&W product screenshots
+- Share Tech descriptions
+- "COMING SOON" badge (Bebas Neue + geometric)
+
+**Call to Action**
+- Massive ANTON: "READY TO DISRUPT?"
+- Contact form or calendar booking
+- Minimal geometric button design
+- Office locations (Share Tech Mono)
+
+#### 2. ABOUT / STORY
+
+- ANTON main heading: "THE STORY"
+- Bebas Neue section headers
+- Share Tech body copy
+- Geometric timeline with nodes
+- Mission/vision/values in bold graphic cards
+- Team approach explanation
+- Halftone imagery for timeline events
+- Partner logos (B&W lockups): Formula 1, Insomniac, PATRÓN, Heineken, Red Bull
+
+#### 3. SERVICES
+
+Individual pages/sections for each of the 4 D's:
+
+**DESIGN**
+- Creative concepting, brand experiences, spatial design, content strategy
+
+**DEVELOPMENT (PRODUCTION)**
+- Production management, fabrication, build-out, technical integration
+
+**DIRECTION (OPERATIONS)**
+- Operations management, logistics, on-site execution, talent management
+
+**DISRUPTION (INNOVATION)**
+- Innovation lab, emerging tech, R&D, future-forward concepts
+
+**Each Service Includes:**
+- ANTON heading for service name
+- Bebas Neue subsections
+- Share Tech detailed descriptions
+- Share Tech Mono capability lists
+- Geometric icon system
+- Process visualization (bold arrows and shapes)
+- Example projects (duotone)
+- Related case studies
+
+#### 4. WORK / PROJECTS
+
+**Grid View**
+- Filterable by: VERTICAL, SERVICE, YEAR, CLIENT (Bebas Neue labels)
+- Duotone thumbnails + Bebas Neue titles + Share Tech Mono tags
+- Hover: scale, invert colors
+- Click through to case study
+
+**Case Study Template**
+- Hero: Duotone/B&W image or video
+- ANTON project title
+- Bebas Neue section headers: CHALLENGE, SOLUTION, RESULTS
+- Share Tech body copy
+- Share Tech Mono metadata and captions
+- Key metrics in bold geometric callout boxes
+- Image gallery (all duotone/B&W)
+- Video embeds with custom B&W controls
+- Team credits (Share Tech Mono)
+- Related projects grid
+
+#### 5. VERTICALS
+
+Individual landing pages:
+- **IMMERSIVE ENTERTAINMENT:** Concerts, festivals, tours, theatrical
+- **EXPERIENTIAL MARKETING:** Brand activations, pop-ups, installations
+- **CREATIVE MEDIA:** Film, video, photography, content production
+- **INTEGRATED TECHNOLOGY:** AV systems, interactive tech, digital integration
+
+**Each Includes:**
+- ANTON headline
+- Bebas Neue subheadings
+- Share Tech descriptions
+- Bold geometric backgrounds
+- Duotone project imagery
+- Case study links
+
+#### 6. PRODUCTS
+
+**ATLVS Page**
+- Platform overview (ANTON heading)
+- Bebas Neue feature headers
+- Share Tech descriptions
+- B&W/duotone screenshots
+- Target users
+- Link to https://atlvs.one
+- GHXSTSHIP service integration
+- Geometric feature grid
+
+**GVTEWAY Page**
+- Massive ANTON: "COMING SOON"
+- Email signup
+- Problem/solution (Share Tech)
+- Vision for platform
+- Bold geometric teaser graphic
+
+#### 7. CONTACT
+
+**Multi-Step Form**
+- Project type selection (Bebas Neue labels)
+- Budget range (Share Tech Mono)
+- Timeline
+- Project description
+- Contact details
+- Bold geometric progress indicator
+
+**Alternative Options**
+- Calendly or booking integration
+- Office/HQ info (Share Tech)
+- Email, phone (Share Tech Mono)
+- Social media (custom B&W icons)
+
+### Secondary Pages
+- **Careers:** Positions, culture, benefits, open roles
+- **News/Press:** Updates, press mentions, industry insights
+- **Privacy Policy** (Share Tech)
+- **Terms of Service** (Share Tech)
+
+---
+
+## 🎭 Design Elements & Components
+
+### Geometric Elements to Include
+- Circles, squares, triangles as accent shapes
+- Halftone patterns for texture
+- Diagonal stripes for energy
+- Grid overlays for structure
+- Bold arrows and lines for direction
+- Abstract compositions as backgrounds
+- Pop art explosion shapes
+- Ben-Day dots for depth
+
+### Component Specifications
+
+#### Navigation
+```
+Component: Header/Navigation
+- Fixed position with ANTON logo wordmark
+- Black background, white text (or inverted)
+- Bebas Neue menu items (uppercase)
+- Mobile: Hamburger → full-screen black overlay
+- Desktop: Horizontal with minimal dropdowns
+- CTA: "START A PROJECT" (Bebas Neue, outlined)
+- Geometric underline on hover
+```
+
+#### Footer
+```
+Component: Footer
+- Multi-column on black background
+- Bebas Neue column headers (white, uppercase)
+- Share Tech links/info (white/grey-400)
+- Share Tech Mono copyright/legal (grey-500)
+- Newsletter signup (minimal input)
+- Bold geometric dividing lines
+- Custom B&W geometric social icons
+```
+
+#### Cards
+```
+Component Types:
+1. Project Card
+   - Duotone image
+   - Bebas Neue title
+   - Share Tech Mono metadata
+   - Thick borders, hard shadows
+   - Hover: scale + invert
+
+2. Service Card
+   - Geometric icon
+   - Bebas Neue heading
+   - Share Tech description
+   - Outlined or filled style
+
+3. Statistic Card
+   - ANTON numbers
+   - Bebas Neue label
+   - Geometric frame
+   - Count-up animation
+```
+
+#### Forms
+```
+Component: Form Elements
+- Bold outlined inputs
+- Bebas Neue labels
+- Share Tech placeholders
+- Share Tech error messages
+- Geometric success/error icons
+- Thick borders (2-3px)
+- High contrast focus states (geometric outlines)
+- 48px minimum touch targets
+```
+
+#### Buttons
+```
+Component: Button/CTA
+- Bebas Neue text (uppercase)
+- Two styles:
+  1. Outlined (white on black, black on white)
+  2. Filled (inverts on hover)
+- Geometric arrows or icons
+- Minimum 48px height
+- Thick borders (2-3px)
+- Scale or invert on hover
+```
+
+#### Media Components
+```
+Components:
+1. Video Player
+   - Custom B&W controls
+   - Geometric play/pause buttons
+   - Progress bar with thick styling
+
+2. Image Gallery
+   - All images duotone/B&W
+   - Lightbox: black bg, white UI
+   - Geometric navigation arrows
+   - Halftone hover overlay
+
+3. Background Video
+   - Converted to B&W
+   - Lazy loading
+   - Geometric placeholder shapes
+```
+
+### Animation Specifications
+```javascript
+// Animation Types to Implement
+
+1. Page Transitions
+   - Hard cuts, wipes
+   - Geometric reveals
+   - No soft fades
+
+2. Scroll-Triggered
+   - Fade in
+   - Slide up/sideways
+   - Scale
+   - Rotate
+   - Parallax with geometric shapes
+
+3. Hover States
+   - Scale (1.0 → 1.05)
+   - Color invert (black ↔ white)
+   - Geometric mask reveals
+   - Halftone overlay fade
+
+4. Loading States
+   - Geometric shape loaders
+   - Halftone patterns
+   - Progress bars (thick, geometric)
+
+5. Cursor Effects (Desktop, Optional)
+   - Follow cursor with geometric shape
+   - Size changes on hover
+   - B&W only
+
+6. Micro-interactions
+   - Button press (scale down)
+   - Input focus (thick border)
+   - Menu expand (geometric wipe)
+   - Tooltip reveal (hard edge)
+```
+
+---
+
+## ✍️ Content Guidelines
+
+### Tone of Voice
+- **Confident & Bold:** We know what we're doing
+- **Disruptive:** Challenge the status quo
+- **Sophisticated:** High-level, professional
+- **Global:** Operate worldwide
+- **Technical but Accessible:** Smart without pretentious
+- **Action-Oriented:** Verbs, movement, momentum
+- **Punchy & Direct:** Short, impactful (Pop Art influence)
+
+### Copywriting Examples
+
+**Headlines (ANTON or BEBAS NEUE)**
+```
+WE DON'T JUST EXECUTE EVENTS. WE CREATE WORLDS.
+DISRUPTING THE INDUSTRY, ONE EXPERIENCE AT A TIME.
+FROM CONCEPT TO REALITY, WE HANDLE EVERYTHING.
+52 COUNTRIES. ONE VISION. LIMITLESS POSSIBILITIES.
+THE IMPOSSIBLE IS OUR SPECIALTY.
+DESIGN. DEVELOP. DIRECT. DISRUPT.
+```
+
+**Service Descriptions (Share Tech)**
+```
+DESIGN:
+We architect the impossible, transforming abstract ideas into 
+tangible experiences that move audiences. Every concept begins 
+with a question: what if?
+
+DEVELOPMENT:
+From steel and stage to pixels and platforms, we build what 
+others say can't be done. Our production teams turn visions 
+into reality at global scale.
+
+DIRECTION:
+Precision operations across continents. We orchestrate chaos 
+into perfection, managing every detail from load-in to strike.
+
+DISRUPTION:
+Tomorrow's experiences, delivered today. We don't follow 
+trends—we create them, pushing technology and creativity 
+to their absolute limits.
+```
+
+**Metadata (Share Tech Mono)**
+```
+CLIENT: FORMULA 1  //  YEAR: 2024  //  LOCATION: MIAMI
+VERTICAL: IMMERSIVE ENTERTAINMENT  //  SCOPE: GLOBAL TOUR
+TAMPA, FL  //  REMOTE GLOBAL  //  EST. 2022
+```
+
+---
+
+## 🚀 Development Phases
+
+### Phase 1: Project Setup & Foundation
+
+**Tasks:**
+1. Initialize Next.js 14+ with TypeScript
+2. Configure Tailwind CSS with custom config
+3. Set up project structure:
+```
+   /app
+   /components
+     /ui (buttons, cards, forms)
+     /layout (header, footer, containers)
+     /sections (hero, services, projects)
+   /lib
+   /utils
+   /styles
+   /public
+     /fonts
+     /images
+```
+4. Install dependencies:
+```bash
+   npm install framer-motion gsap react-hook-form
+   npm install sharp # for image processing
+```
+5. Configure ESLint & Prettier
+6. Set up Git repository
+
+**Tailwind Configuration:**
+```javascript
+// tailwind.config.js
+module.exports = {
+  content: [
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        black: '#000000',
+        white: '#FFFFFF',
+        grey: {
+          100: '#F5F5F5',
+          200: '#E5E5E5',
+          300: '#D4D4D4',
+          400: '#A3A3A3',
+          500: '#737373',
+          600: '#525252',
+          700: '#404040',
+          800: '#262626',
+          900: '#171717',
+        }
+      },
+      fontFamily: {
+        anton: ['Anton', 'Impact', 'Arial Black', 'sans-serif'],
+        bebas: ['Bebas Neue', 'Arial Narrow', 'Arial', 'sans-serif'],
+        share: ['Share Tech', 'Monaco', 'Consolas', 'monospace'],
+        'share-mono': ['Share Tech Mono', 'Courier New', 'Courier', 'monospace'],
+      },
+      fontSize: {
+        'hero': 'clamp(48px, 10vw, 120px)',
+        'h1': 'clamp(36px, 8vw, 80px)',
+        'h2': 'clamp(28px, 5vw, 56px)',
+        'h3': 'clamp(24px, 4vw, 40px)',
+        'h4': 'clamp(20px, 3vw, 32px)',
+        'h5': 'clamp(18px, 2.5vw, 24px)',
+        'h6': 'clamp(16px, 2vw, 20px)',
+        'body': 'clamp(15px, 1.5vw, 18px)',
+        'meta': 'clamp(11px, 1.2vw, 14px)',
+      },
+    },
+  },
+  plugins: [],
+}
+```
+
+**Font Loading:**
+```typescript
+// app/layout.tsx
+import { Anton } from 'next/font/google'
+import { Bebas_Neue } from 'next/font/google'
+import { Share_Tech } from 'next/font/google'
+import { Share_Tech_Mono } from 'next/font/google'
+
+const anton = Anton({ 
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-anton',
+  display: 'swap',
+})
+
+const bebas = Bebas_Neue({ 
+  weight: ['400'],
+  subsets: ['latin'],
+  variable: '--font-bebas',
+  display: 'swap',
+})
+
+const share = Share_Tech({ 
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-share',
+  display: 'swap',
+})
+
+const shareMono = Share_Tech_Mono({ 
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-share-mono',
+  display: 'swap',
+})
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en" className={`${anton.variable} ${bebas.variable} ${share.variable} ${shareMono.variable}`}>
+      <body>{children}</body>
+    </html>
+  )
+}
+```
+
+### Phase 2: Design System & Base Components
+
+**Tasks:**
+1. Create design tokens file
+2. Build geometric pattern utilities (halftone, dots, stripes)
+3. Create base UI components:
+```typescript
+// components/ui/Button.tsx
+interface ButtonProps {
+  variant: 'outlined' | 'filled'
+  size: 'sm' | 'md' | 'lg'
+  children: React.ReactNode
+  onClick?: () => void
+}
+
+// components/ui/Card.tsx
+interface CardProps {
+  type: 'project' | 'service' | 'statistic'
+  image?: string
+  title: string
+  description?: string
+  metadata?: string
+}
+
+// components/ui/Input.tsx
+interface InputProps {
+  label: string
+  type: 'text' | 'email' | 'textarea'
+  error?: string
+}
+```
+
+4. Build layout components:
+   - Header/Navigation
+   - Footer
+   - Container
+   - Section
+   - Grid (asymmetric options)
+
+5. Create animation wrappers:
+```typescript
+// components/animations/FadeIn.tsx
+// components/animations/SlideUp.tsx
+// components/animations/ScaleOnHover.tsx
+// components/animations/GeometricReveal.tsx
+```
+
+6. Build image processing utilities:
+```typescript
+// lib/imageProcessing.ts
+export function convertToDuotone(imagePath: string): string
+export function applyHalftone(imagePath: string): string
+```
+
+### Phase 3: Core Pages Development
+
+**Homepage Tasks:**
+1. Hero Section
+   - Full-screen container
+   - ANTON title with geometric ghost ship
+   - Bebas Neue tagline
+   - Scroll indicator animation
+
+2. Who We Are Section
+   - Statistics counter with count-up animation
+   - Halftone globe or geometric network
+   - Share Tech intro copy
+
+3. The 4 D's Section
+   - Four full-screen alternating sections
+   - Geometric icons (Design, Development, Direction, Disruption)
+   - Bebas Neue headings + Share Tech descriptions
+   - Background geometric shapes
+
+4. Verticals Grid
+   - 2x2 or 1x4 grid layout
+   - Duotone images
+   - Bebas Neue labels
+   - Hover effects
+
+5. Featured Projects
+   - Asymmetric grid (3-4 projects)
+   - Duotone imagery with halftone overlay
+   - Share Tech Mono metadata
+   - CTA links
+
+6. Products Section
+   - ATLVS spotlight
+   - GVTEWAY teaser with "COMING SOON"
+   - B&W product screenshots
+
+7. CTA Section
+   - Massive ANTON headline
+   - Contact form or booking link
+   - Geometric button
+
+**About Page Tasks:**
+1. Hero with ANTON "THE STORY"
+2. Company origin story (Share Tech)
+3. Geometric timeline with halftone imagery
+4. Mission/vision/values cards
+5. Partner logo grid (B&W lockups)
+
+**Services Pages Tasks:**
+1. Create template for service pages
+2. Build all 4 service pages (Design, Development, Direction, Disruption)
+3. Add geometric icon system
+4. Process visualization diagrams
+5. Capability lists (Share Tech Mono)
+6. Example projects per service
+
+**Work/Projects Page Tasks:**
+1. Filterable grid system
+   - Filter UI (Bebas Neue)
+   - Project cards with duotone images
+   - Hover animations
+
+2. Case Study Template
+   - Hero section with duotone image/video
+   - ANTON title
+   - Bebas Neue section headers
+   - Share Tech body copy
+   - Image gallery with lightbox
+   - Related projects
+
+**Contact Page Tasks:**
+1. Multi-step form with validation
+2. Geometric progress indicator
+3. Form fields with proper styling
+4. Success/error states
+5. Alternative contact methods
+6. Office location info
+
+### Phase 4: Content Management Integration
+
+**Tasks:**
+1. Choose and set up CMS (Sanity/Contentful/Payload)
+2. Create content models:
+   - Project/Case Study
+   - Service
+   - Blog Post
+   - Team Member
+3. Set up dynamic routing
+4. Create CMS preview mode
+5. Build image processing pipeline for automatic B&W conversion
+6. Implement content fetching utilities
+
+### Phase 5: Polish & Advanced Features
+
+**Tasks:**
+1. Implement scroll animations
+   - GSAP ScrollTrigger for complex sequences
+   - Framer Motion for simpler animations
+   - Parallax effects with geometric shapes
+
+2. Add 3D elements (if included)
+   - Three.js/React Three Fiber setup
+   - Abstract geometric ghost ship
+   - Floating geometric particles
+   - All rendered in B&W/greyscale
+
+3. Halftone and Pop Art effects
+   - Canvas-based halftone overlays
+   - Ben-Day dot patterns
+   - Screen print aesthetic filters
+
+4. Performance optimization
+   - Image optimization (WebP/AVIF)
+   - Code splitting
+   - Lazy loading
+   - Bundle size analysis
+   - Lighthouse audit
+
+5. SEO implementation
+   - Metadata for all pages
+   - Open Graph images (B&W versions)
+   - Schema markup
+   - Sitemap generation
+   - robots.txt
+
+6. Accessibility audit
+   - Keyboard navigation testing
+   - Screen reader testing
+   - Color contrast verification
+   - ARIA labels
+   - Focus indicators
+
+7. Cross-browser testing
+8. Mobile responsiveness refinement
+9. Typography fine-tuning across breakpoints
+
+### Phase 6: Launch Preparation
+
+**Tasks:**
+1. Set up analytics (Plausible/GA)
+2. Configure Vercel hosting
+3. Set up custom domain
+4. SSL configuration
+5. Environment variables setup
+6. Staging environment testing
+7. Final QA checklist:
+   - [ ] All links working
+   - [ ] Forms submitting correctly
+   - [ ] Images loading and converting to B&W
+   - [ ] Typography rendering correctly
+   - [ ] Animations smooth on all devices
+   - [ ] Mobile responsive
+   - [ ] Accessibility compliance
+   - [ ] Performance targets met
+8. Production deployment
+9. Post-launch monitoring
+
+---
+
+## 📊 Performance & SEO Requirements
+
+### Performance Targets
+- **Lighthouse Score:** 90+ across all metrics
+- **Core Web Vitals:**
+  - LCP (Largest Contentful Paint): < 2.5s
+  - FID (First Input Delay): < 100ms
+  - CLS (Cumulative Layout Shift): < 0.1
+- **Page Load Time:** < 3s on 3G
+- **Time to Interactive:** < 5s
+
+### SEO Requirements
+```typescript
+// Example metadata for homepage
+export const metadata = {
+  title: 'GHXSTSHIP Industries | Immersive Entertainment Production',
+  description: 'Global experiential production agency specializing in immersive entertainment, experiential marketing, creative media, and integrated technology. Design. Develop. Direct. Disrupt.',
+  keywords: 'experiential production, immersive entertainment, event production, brand activations, creative agency, Tampa',
+  openGraph: {
+    title: 'GHXSTSHIP Industries',
+    description: 'We Create Beyond Reality',
+    images: ['/og-image.jpg'], // B&W version
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'GHXSTSHIP Industries',
+    description: 'We Create Beyond Reality',
+    images: ['/twitter-image.jpg'], // B&W version
+  },
+}
+```
+
+**SEO Checklist:**
+- [ ] Semantic HTML5 structure
+- [ ] Proper heading hierarchy (H1 → H6)
+- [ ] Meta titles (50-60 chars)
+- [ ] Meta descriptions (150-160 chars)
+- [ ] Open Graph tags
+- [ ] Twitter Card tags
+- [ ] Schema markup (Organization, Service, CreativeWork)
+- [ ] Sitemap.xml
+- [ ] robots.txt
+- [ ] Alt text for all images
+- [ ] Internal linking strategy
+- [ ] Canonical URLs
+- [ ] Mobile-friendly test passing
+
+### Image Optimization Strategy
+```typescript
+// All images must be processed to B&W
+// Use Next.js Image component for optimization
+
+import Image from 'next/image'
+
+<Image
+  src="/project-hero.jpg"
+  alt="Project name - brief description"
+  width={1920}
+  height={1080}
+  quality={85}
+  priority={true} // for above-fold images
+  className="duotone-filter" // apply B&W filter
+/>
+```
+
+**Image Processing Pipeline:**
+1. Convert all uploads to high-contrast B&W
+2. Generate multiple sizes (responsive images)
+3. Serve WebP/AVIF formats where supported
+4. Implement lazy loading for below-fold images
+5. Use blur placeholders (geometric shapes)
+
+---
+
+## ♿ Accessibility Requirements
+
+### WCAG 2.1 AA Compliance
+
+**Checklist:**
+- [ ] Keyboard navigation fully functional
+- [ ] Screen reader tested (NVDA, JAWS, VoiceOver)
+- [ ] Color contrast ratios meet AA standards (easily achieved with B&W)
+- [ ] Focus indicators visible (thick geometric outlines)
+- [ ] Skip navigation links implemented
+- [ ] ARIA labels on interactive elements
+- [ ] Form labels properly associated
+- [ ] Error messages descriptive and linked
+- [ ] Alt text on all images
+- [ ] Video captions (if applicable)
+- [ ] Reduced motion preferences respected
+- [ ] Touch targets minimum 48x48px
+- [ ] Semantic HTML structure
+- [ ] Heading hierarchy logical
+
+**Reduced Motion Implementation:**
+```css
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+```
+
+**Focus Styles:**
+```css
+/* Visible, geometric focus indicators */
+*:focus {
+  outline: 3px solid white;
+  outline-offset: 4px;
+}
+
+/* Dark mode variant */
+.dark *:focus {
+  outline-color: black;
+}
+```
+
+---
+
+## 🎯 Key Features & Functionality
+
+### Must-Have Features
+
+#### 1. Project/Work Showcase
+- Filterable grid (by vertical, service, year, client)
+- Searchable by keyword
+- Duotone imagery with hover effects
+- Full case study pages with:
+  - Challenge, solution, results
+  - Image galleries
+  - Video embeds (B&W)
+  - Related projects recommendations
+
+#### 2. Service Breakdown
+- Individual pages for each of the 4 D's
+- Interactive service explorer
+- Process visualization with geometric diagrams
+- Capability matrices (Share Tech Mono lists)
+- Example projects per service
+
+#### 3. Contact/Lead Capture
+- Multi-step intelligent form
+  - Step 1: Project type
+  - Step 2: Budget & timeline
+  - Step 3: Description
+  - Step 4: Contact info
+- Form validation with React Hook Form
+- Conditional logic based on selections
+- Success/error states with geometric icons
+- Calendar booking integration (optional)
+- Multiple contact methods (email, phone, social)
+
+#### 4. Blog/News Section
+- Company updates
+- Project announcements
+- Industry insights
+- Filterable by category
+- Bebas Neue headlines
+- Share Tech body copy
+- Featured image (duotone)
+
+#### 5. Global Presence Visualization
+- Abstract geometric map or list
+- Project locations marked
+- 52+ countries highlighted
+- Time zones visualization (optional)
+- Animated connections/lines
+
+### Nice-to-Have Features
+
+#### 1. 3D Geometric Elements
+- Abstract ghost ship 3D model
+- Floating geometric particles
+- Interactive shape compositions
+- Mouse-tracking effects
+- All B&W/greyscale rendering
+
+#### 2. Team Showcase
+- Team member profiles
+- Duotone portrait photography
+- Skills/expertise (Bebas Neue + Share Tech)
+- LinkedIn integration
+- Global location tags (Share Tech Mono)
+
+#### 3. Client Portal
+- Link to ATLVS platform
+- Project status dashboard
+- Login interface (geometric styling)
+
+#### 4. Real-Time Features
+- Live project counter
+- Active projects list
+- Recent social feed (converted to B&W)
+
+#### 5. Interactive Timeline
+- Company history
+- Key milestones
+- Expandable events
+- Halftone imagery
+- Geometric connectors
+
+#### 6. Pop Art Effects Library
+- Halftone image generator
+- Ben-Day dot pattern creator
+- Comic book-style impact graphics
+- Screen print effect overlays
+- Warhol-style repetition grids
+
+---
+
+## 📦 Deliverables
+
+### Code & Files
+1. **Complete Next.js Application**
+   - Fully functional with all pages
+   - TypeScript throughout
+   - Tailwind CSS styling
+   - Responsive design (mobile, tablet, desktop)
+
+2. **Design System Package**
+   - Monochromatic color palette
+   - Typography system (4 fonts)
+   - Component library
+   - Geometric pattern utilities
+   - Animation presets
+
+3. **Image Processing Pipeline**
+   - Automatic duotone/B&W conversion
+   - Halftone effect generator
+   - Responsive image generation
+   - WebP/AVIF output
+
+4. **CMS Integration** (if applicable)
+   - Content models configured
+   - Dynamic routing set up
+   - Preview mode enabled
+   - Content editing guide
+
+5. **Source Code Repository**
+   - Git repository with clear commit history
+   - README with setup instructions
+   - Environment variables documented
+   - Deployment instructions
+
+### Documentation
+1. **Setup Guide**
+   - Installation instructions
+   - Environment configuration
+   - Development workflow
+   - Build and deployment
+
+2. **Component Library Documentation**
+   - Storybook or similar
+   - Usage examples for each component
+   - Props and variants documented
+   - Accessibility notes
+
+3. **Typography Guide**
+   - Font usage rules
+   - Size scales
+   - When to use each font
+   - Code examples
+
+4. **Content Editing Guide**
+   - CMS usage instructions
+   - Image guidelines (B&W conversion)
+   - SEO best practices
+   - Content templates
+
+5. **Style Guide**
+   - Color usage rules
+   - Geometric elements library
+   - Animation guidelines
+   - Do's and don'ts
+
+### Reports
+1. **Performance Report**
+   - Lighthouse scores for all pages
+   - Core Web Vitals metrics
+   - Page load times
+   - Optimization recommendations
+
+2. **Accessibility Audit Report**
+   - WCAG compliance checklist
+   - Testing results (screen readers, keyboard)
+   - Issues found and resolved
+   - Ongoing maintenance recommendations
+
+3. **SEO Report**
+   - Meta tags verification
+   - Schema markup validation
+   - Internal linking structure
+   - Sitemap and robots.txt status
+
+4. **Browser Compatibility Report**
+   - Tested browsers and versions
+   - Known issues and workarounds
+   - Mobile device testing results
+
+---
+
+## 🎨 Design Aesthetic Summary
+
+### Contemporary Minimal Pop Art Principles
+
+**Visual Identity:**
+- **High Contrast:** Pure black and white with strategic grey usage
+- **Bold Typography:** Massive ANTON and Bebas Neue headlines
+- **Geometric Shapes:** Circles, squares, triangles, abstract compositions
+- **Halftone Textures:** Dot patterns for depth without color
+- **Screen Print Aesthetic:** Sharp edges, flat colors, bold lines
+- **Brutalist Influence:** Raw, honest, functional design
+- **Pop Art References:** Warhol repetition, Lichtenstein graphics
+- **Bauhaus Inspiration:** Form follows function, geometric precision
+
+**What to DO:**
+✅ Use pure black (#000000) and pure white (#FFFFFF) as primary colors  
+✅ Convert ALL images to high-contrast duotone or B&W  
+✅ Use massive typography for impact (ANTON at 120px+)  
+✅ Create geometric compositions with shapes  
+✅ Implement halftone and dot patterns for texture  
+✅ Use thick borders (2-3px) instead of soft shadows  
+✅ Hard cuts and wipes for transitions, not fades  
+✅ Invert colors on hover (black ↔ white)  
+✅ Bold, uppercase typography for headers  
+✅ Strategic use of negative space  
+✅ Asymmetric, dynamic layouts  
+✅ Comic book-style impact graphics  
+
+**What NOT to DO:**
+❌ NO COLOR - absolutely no hues beyond black/white/grey  
+❌ No soft shadows or blurs (use hard geometric shadows)  
+❌ No gradients (except halftone patterns)  
+❌ No subtle fades (use hard cuts)  
+❌ No organic shapes (keep geometric)  
+❌ No small, timid typography  
+❌ No excessive decoration  
+❌ No color images (convert everything to B&W)  
+
+### Reference Inspirations
+- **Andy Warhol:** Repetition, screen printing, bold contrast
+- **Roy Lichtenstein:** Ben-Day dots, comic book aesthetic, bold outlines
+- **Bauhaus Movement:** Geometric forms, functional design, grid systems
+- **Swiss Design:** Clean typography, grid-based layouts, minimal color
+- **Brutalist Architecture:** Raw, honest materials, bold forms
+- **Vintage Posters:** High contrast, bold typography, geometric shapes
+- **Japanese Graphic Design:** Negative space, asymmetry, bold compositions
+
+---
+
+## 🚦 Success Metrics
+
+### Launch Criteria
+- [ ] All primary pages live and functional
+- [ ] Lighthouse score 90+ on all pages
+- [ ] WCAG 2.1 AA compliance verified
+- [ ] Mobile responsive across all devices
+- [ ] Forms submitting successfully
+- [ ] CMS integrated and functional
+- [ ] All images converted to B&W
+- [ ] Typography rendering correctly across browsers
+- [ ] Animations smooth (60fps)
+- [ ] SEO metadata complete
+- [ ] Analytics tracking implemented
+- [ ] SSL certificate active
+- [ ] Custom domain configured
+
+### Post-Launch Metrics to Track
+- **User Engagement:**
+  - Average session duration (target: 3+ minutes)
+  - Pages per session (target: 4+ pages)
+  - Bounce rate (target: <40%)
+  
+- **Conversion Metrics:**
+  - Contact form submissions
+  - Project inquiry rate
+  - Calendar bookings
+  - Newsletter signups
+  
+- **Content Metrics:**
+  - Case study view rate
+  - Project page engagement
+  - Service page visits
+  - Blog post readership
+  
+- **Technical Metrics:**
+  - Page load time (<3s)
+  - Core Web Vitals scores
+  - Error rate (<0.1%)
+  - Uptime (>99.9%)
+
+---
+
+## 📅 Timeline & Priorities
+
+**Estimated Timeline:** 6-8 weeks for full development
+
+### Priority 1: Core Launch (Weeks 1-4)
+- Homepage (complete with all sections)
+- About page
+- Services overview
+- Work/Projects grid (minimum 6-8 case studies)
+- Contact page
+- Navigation and footer
+
+### Priority 2: Content Expansion (Weeks 5-6)
+- Individual service pages (4 D's)
+- Individual vertical pages
+- Additional case studies (10+ total)
+- Team page
+- Products pages (ATLVS, GVTEWAY)
+
+### Priority 3: Advanced Features (Weeks 7-8)
+- Blog/News section
+- 3D elements (if included)
+- Advanced animations
+- Client portal integration
+- Real-time features
+
+### Post-Launch Additions
+- Expanded case study library
+- Career page with job listings
+- Press/media kit
+- Resource library
+- Client testimonials
+
+---
+
+## 🔧 Technical Notes
+
+### Environment Variables
+```bash
+# .env.local
+NEXT_PUBLIC_SITE_URL=https://ghxstship.com
+NEXT_PUBLIC_ANALYTICS_ID=your_analytics_id
+
+# CMS (if using Sanity)
+NEXT_PUBLIC_SANITY_PROJECT_ID=your_project_id
+NEXT_PUBLIC_SANITY_DATASET=production
+SANITY_API_TOKEN=your_api_token
+
+# Forms
+NEXT_PUBLIC_FORM_ENDPOINT=your_form_endpoint
+
+# Optional
+NEXT_PUBLIC_CALENDLY_URL=your_calendly_link
+```
+
+### Folder Structure
+```
+ghxstship-website/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx (homepage)
+│   ├── about/
+│   ├── services/
+│   │   ├── design/
+│   │   ├── development/
+│   │   ├── direction/
+│   │   └── disruption/
+│   ├── work/
+│   │   └── [slug]/
+│   ├── verticals/
+│   ├── products/
+│   ├── contact/
+│   └── api/
+├── components/
+│   ├── ui/
+│   │   ├── Button.tsx
+│   │   ├── Card.tsx
+│   │   ├── Input.tsx
+│   │   └── ...
+│   ├── layout/
+│   │   ├── Header.tsx
+│   │   ├── Footer.tsx
+│   │   └── Container.tsx
+│   ├── sections/
+│   │   ├── Hero.tsx
+│   │   ├── Services.tsx
+│   │   ├── Projects.tsx
+│   │   └── ...
+│   └── animations/
+│       ├── FadeIn.tsx
+│       ├── SlideUp.tsx
+│       └── ...
+├── lib/
+│   ├── imageProcessing.ts
+│   ├── animations.ts
+│   └── utils.ts
+├── styles/
+│   └── globals.css
+├── public/
+│   ├── fonts/
+│   ├── images/
+│   └── icons/
+└── types/
+    └── index.ts
+```
+
+### Git Commit Strategy
+Use conventional commits:
+```
+feat: Add homepage hero section
+fix: Resolve mobile navigation issue
+style: Update typography scales
+docs: Add component documentation
+refactor: Optimize image processing
+perf: Improve page load time
+test: Add accessibility tests
+```
+
+---
+
+## 💡 Additional Implementation Notes
+
+### Monochrome Image Conversion
+```typescript
+// lib/imageProcessing.ts
+import sharp from 'sharp'
+
+export async function convertToMonochrome(
+  inputPath: string,
+  outputPath: string
+) {
+  await sharp(inputPath)
+    .grayscale() // Convert to greyscale
+    .normalize() // Enhance contrast
+    .modulate({
+      brightness: 1.1,
+      saturation: 0,
+    })
+    .toFile(outputPath)
+}
+
+export async function applyHalftone(
+  inputPath: string,
+  outputPath: string,
+  dotSize: number = 4
+) {
+  // Implementation for halftone effect
+  // Can use canvas API or image processing library
+}
+```
+
+### Geometric Pattern Generators
+```typescript
+// lib/patterns.ts
+
+export function generateDotPattern(
+  size: number,
+  spacing: number,
+  color: 'black' | 'white'
+): string {
+  // Return SVG data URL for Ben-Day dots
+}
+
+export function generateHalftonePattern(
+  density: number
+): string {
+  // Return SVG data URL for halftone pattern
+}
+
+export function generateStripesPattern(
+  angle: number,
+  spacing: number
+): string {
+  // Return SVG data URL for diagonal stripes
+}
+```
+
+### Typography Component Example
+```typescript
+// components/ui/Typography.tsx
+
+interface TypographyProps {
+  variant: 'hero' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'body' | 'meta'
+  children: React.ReactNode
+  className?: string
+  uppercase?: boolean
+}
+
+export function Typography({ 
+  variant, 
+  children, 
+  className,
+  uppercase = false 
+}: TypographyProps) {
+  const baseClasses = {
+    hero: 'font-anton text-hero leading-none',
+    h1: 'font-anton text-h1 leading-tight',
+    h2: 'font-bebas text-h2 leading-tight tracking-wide',
+    h3: 'font-bebas text-h3 leading-tight tracking-wide',
+    h4: 'font-bebas text-h4 leading-normal tracking-wide',
+    h5: 'font-bebas text-h5 leading-normal tracking-wide',
+    h6: 'font-bebas text-h6 leading-normal tracking-wide',
+    body: 'font-share text-body leading-relaxed',
+    meta: 'font-share-mono text-meta leading-normal tracking-widest',
+  }
+
+  const Component = variant === 'body' ? 'p' : 
+                    variant === 'meta' ? 'span' : variant
+
+  return (
+    <Component 
+      className={`
+        ${baseClasses[variant]}
+        ${uppercase ? 'uppercase' : ''}
+        ${className}
+      `}
+    >
+      {children}
+    </Component>
+  )
+}
+```
+
+---
+
+## ✅ Final Checklist
+
+### Pre-Launch Verification
+- [ ] All fonts loading correctly (Anton, Bebas Neue, Share Tech, Share Tech Mono)
+- [ ] Color palette strictly black/white/greyscale only
+- [ ] All images converted to duotone/B&W
+- [ ] Typography hierarchy consistent across all pages
+- [ ] Navigation functional on all devices
+- [ ] Footer complete with all links
+- [ ] Forms validating and submitting
+- [ ] Animations smooth (60fps)
+- [ ] Mobile responsive (tested on iOS and Android)
+- [ ] Tablet layout optimized
+- [ ] Desktop layout optimized (1920px+)
+- [ ] Lighthouse score 90+ (Performance, Accessibility, Best Practices, SEO)
+- [ ] WCAG 2.1 AA compliance verified
+- [ ] Cross-browser tested (Chrome, Firefox, Safari, Edge)
+- [ ] SEO metadata complete for all pages
+- [ ] Sitemap.xml generated
+- [ ] robots.txt configured
+- [ ] 404 page styled
+- [ ] SSL certificate active
+- [ ] Analytics tracking
+- [ ] Domain configured
+- [ ] Staging environment tested
+- [ ] Content proofread
+- [ ] Legal pages complete (Privacy, Terms)
+
+---
+
+## 📞 Contact & Support
+
+**Project Lead:** Julian  
+**Company:** GHXSTSHIP Industries LLC  
+**Website (Product):** https://atlvs.one  
+**Location:** Tampa, FL (Global Remote Team)
+
+---
+
+## 🎬 Let's Build Something Impossible
+
+This website should feel like it was built by a team that creates impossible experiences. Every detail matters. Every animation should have purpose. Every typographic choice should reinforce the bold, disruptive brand identity.
+
+The monochrome palette isn't a limitation—it's a statement. The geometric shapes aren't decoration—they're the language. The massive typography isn't excessive—it's confident.
+
+**GHXSTSHIP doesn't follow trends. GHXSTSHIP creates them.**
+
+Now go build it. Make it bold. Make it geometric. Make it black and white. Make it impossible to ignore.
+
+---
+
+**Timeline:** 6-8 weeks  
+**Priority:** Homepage, About, Services, Work, Contact first  
+**Success:** User engagement, conversions, visual impact, brand memorability
+
+**END OF BRIEF**
