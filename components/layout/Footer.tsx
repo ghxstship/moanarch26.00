@@ -89,18 +89,10 @@ export function Footer() {
 
         {/* Divider */}
         <div className="border-t-2 border-grey-800 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="flex justify-center items-center">
             <Typography variant="meta" className="text-grey-500" uppercase>
               © {currentYear} GHXSTSHIP Industries LLC. All rights reserved.
             </Typography>
-            <div className="flex space-x-6">
-              <Typography variant="meta" className="text-grey-500" uppercase>
-                Est. 2022
-              </Typography>
-              <Typography variant="meta" className="text-grey-500" uppercase>
-                52+ Countries
-              </Typography>
-            </div>
           </div>
         </div>
       </Container>
