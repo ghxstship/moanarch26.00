@@ -36,13 +36,13 @@ export const metadata: Metadata = {
   keywords: "experiential production, immersive entertainment, event production, brand activations, creative agency, Tampa",
   openGraph: {
     title: 'GHXSTSHIP Industries',
-    description: 'We Create Beyond Reality',
+    description: 'Charter the Uncharted',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'GHXSTSHIP Industries',
-    description: 'We Create Beyond Reality',
+    description: 'Charter the Uncharted',
   },
 };
 

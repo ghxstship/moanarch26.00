@@ -57,7 +57,7 @@ export function Footer() {
               GHXSTSHIP
             </Typography>
             <Typography variant="body" className="text-grey-400 mb-4">
-              We create beyond reality.
+              Charter the Uncharted.
             </Typography>
             <Typography variant="meta" className="text-grey-500" uppercase>
               Tampa, FL // Global Remote

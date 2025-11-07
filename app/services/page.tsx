@@ -74,10 +74,10 @@ export default function ServicesPage() {
             <SlideUp>
               <div className="text-center max-w-3xl mx-auto">
                 <Typography variant="hero" className="text-white mb-6" uppercase>
-                  The 4 D&apos;s
+                  Our Services
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-xl">
-                  Our comprehensive service framework that guides every project from concept to completion. 
+                  The 4D Approach: Our comprehensive service framework that guides every project from concept to completion. 
                   Design. Develop. Direct. Disrupt.
                 </Typography>
               </div>
@@ -181,7 +181,7 @@ export default function ServicesPage() {
                 Ready to Start?
               </Typography>
               <Typography variant="body" className="text-grey-400 max-w-2xl mx-auto mb-8">
-                Let&apos;s discuss how our 4 D&apos;s framework can bring your vision to life.
+                Let&apos;s discuss how our 4D Approach can bring your vision to life.
               </Typography>
               <Link href="/contact">
                 <button className="font-bebas uppercase tracking-wide px-8 py-4 text-lg border-2 border-white text-white hover:bg-white hover:text-black transition-all">

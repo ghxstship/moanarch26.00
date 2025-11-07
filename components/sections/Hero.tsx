@@ -38,7 +38,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <Typography variant="h1" className="text-white mb-8" uppercase>
-              We Create Beyond Reality
+              Charter the Uncharted
             </Typography>
           </motion.div>
 
