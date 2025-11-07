@@ -42,12 +42,12 @@ export default function AboutPage() {
                 <Typography variant="body" className="text-grey-400 text-xl leading-relaxed mb-6">
                   Every legend starts somewhere. This one started with a kid who could read sheet music before 
                   he could read maps—and ended up navigating experiences across 52 countries. This is how 
-                  impossible became inevitable.
+                  impossible became inevitable. Also how we learned that sleep is optional.
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-xl leading-relaxed">
                   Thirteen years operating at the intersection of hospitality, live entertainment, and experiential 
-                  marketing taught us that the difference between epic and disaster is usually just better planning 
-                  and a crew that&apos;s seen it before.
+                  marketing taught us that the difference between epic and disaster is usually just better planning, 
+                  a crew that&apos;s seen it before, and knowing which rules are suggestions.
                 </Typography>
               </div>
             </SlideUp>
@@ -89,9 +89,10 @@ export default function AboutPage() {
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-lg leading-relaxed">
                   Every challenging install taught something. Every impossible deadline revealed what&apos;s 
-                  actually possible. That accumulated knowledge became GHXSTSHIP. From classical musician to 
-                  cruise director to festival producer to brand strategist to technical architect—every chapter 
-                  built the next. Every lesson compounded.
+                  actually possible. Every 3 AM crisis call added another story we probably shouldn&apos;t tell clients. 
+                  That accumulated knowledge became GHXSTSHIP. From classical musician to cruise director to festival 
+                  producer to brand strategist to technical architect—every chapter built the next. Every lesson compounded. 
+                  Every gray hair earned.
                 </Typography>
               </SlideUp>
             </div>
@@ -107,8 +108,9 @@ export default function AboutPage() {
                   The Journey
                 </Typography>
                 <Typography variant="body" className="text-grey-600 max-w-2xl mx-auto">
-                  From classical concert halls to cruise ships to festival grounds to F1 hospitality—every 
-                  chapter taught lessons that became operational advantages.
+                  From classical concert halls to cruise ships to festival grounds to motorsport hospitality—every 
+                  chapter taught lessons that became operational advantages. Also taught us that Murphy&apos;s Law is real 
+                  and has excellent timing.
                 </Typography>
               </div>
             </FadeIn>
@@ -144,7 +146,8 @@ export default function AboutPage() {
                   We&apos;ve Navigated With
                 </Typography>
                 <Typography variant="body" className="text-grey-400 max-w-2xl mx-auto">
-                  Production experience with brands that demand operational excellence and zero margin for error.
+                  Production experience with brands that demand operational excellence and zero margin for error. 
+                  We delivered. They came back. That&apos;s the whole pitch.
                 </Typography>
               </div>
             </FadeIn>

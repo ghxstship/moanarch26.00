@@ -23,9 +23,9 @@ export function CTA() {
           </Typography>
           
           <Typography variant="body" className="text-grey-600 max-w-2xl mx-auto mb-12">
-            We&apos;ve navigated 52 countries, managed productions that shouldn&apos;t technically work, 
-            and solved problems that emerge at 3 AM during setup. If you&apos;ve got the vision, 
-            we&apos;ve got the operational chops to make it real.
+            Fifty-two countries. Countless 3 AM crisis calls. More &quot;that&apos;s impossible&quot; moments 
+            than we can count—all of which we made possible anyway. If you&apos;ve got the vision and the budget, 
+            we&apos;ve got the operational chops and the audacity to make it real.
           </Typography>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

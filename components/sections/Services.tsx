@@ -8,37 +8,37 @@ import { SlideUp } from '../animations/SlideUp';
 const services = [
   {
     title: 'DISCOVER',
-    description: 'Strategic discovery and market analysis. We map territory between ambitious vision and executable reality—understanding objectives, identifying constraints, designing experiences that move audiences while staying operationally achievable.',
+    description: 'Strategic discovery and market analysis. We map the territory between "I have a crazy idea" and "this might actually work." Understanding objectives, spotting constraints before they become disasters, and designing experiences that move audiences without bankrupting anyone.',
     bg: 'bg-white text-black',
   },
   {
     title: 'DESIGN',
-    description: 'Concept development backed by technical feasibility. Environmental design, experience mapping, visual identity creation, and journey architecture. Every element serves strategic objectives while maintaining creative integrity.',
+    description: 'Concept development backed by actual physics. Environmental design, experience mapping, visual identity creation, and journey architecture. Every element serves strategic objectives while maintaining creative integrity—and structural integrity. Both matter.',
     bg: 'bg-black text-white',
   },
   {
     title: 'DEVELOP',
-    description: 'Production execution where vision becomes tangible. Steel, pixels, fabric, circuits—whatever the medium, we engineer it at scale. Our teams build festival infrastructure, branded environments, custom platforms, and installations that shouldn&apos;t technically work but absolutely do.',
+    description: 'Production execution where vision becomes tangible. Steel, pixels, fabric, circuits—whatever the medium, we engineer it at scale. Our teams build festival infrastructure, branded environments, and installations that make engineers nervous and audiences lose their minds. In a good way.',
     bg: 'bg-white text-black',
   },
   {
     title: 'DELIVER',
-    description: 'Project management as operational excellence. Load-in schedules, vendor coordination, permit acquisition, contingency planning. We&apos;ve managed simultaneous productions across continents and solved 3 AM problems that would break other crews.',
+    description: 'Project management as operational excellence. Load-in schedules, vendor coordination, permit acquisition, contingency planning. We&apos;ve managed simultaneous productions across continents and solved 3 AM problems that would make lesser crews cry into their walkie-talkies.',
     bg: 'bg-black text-white',
   },
   {
     title: 'DIRECT',
-    description: 'On-site technical direction and real-time problem solving. Our teams supervise every detail from first truck arrival to final strike, ensuring execution matches design intent and client expectations.',
+    description: 'On-site technical direction and real-time problem solving. Our teams supervise every detail from first truck arrival to final strike, ensuring execution matches design intent and client expectations—even when reality has other plans.',
     bg: 'bg-white text-black',
   },
   {
     title: 'DISRUPT',
-    description: 'Innovation without recklessness. We deploy emerging technologies ahead of adoption curves, create experiences that set new industry standards, and push boundaries with proper engineering documentation and adequate insurance coverage.',
+    description: 'Innovation without recklessness. We deploy emerging technologies ahead of adoption curves, create experiences that set new industry standards, and push boundaries with proper engineering documentation and adequate insurance coverage. Because chaos is fun, lawsuits are not.',
     bg: 'bg-black text-white',
   },
   {
     title: 'DOMINATE',
-    description: 'Post-event analysis and continuous improvement. Performance metrics, lessons learned, evolution planning. Results that speak louder than promises—delivered on time, within budget, as specified.',
+    description: 'Post-event analysis and continuous improvement. Performance metrics, lessons learned, evolution planning. Results that speak louder than promises—delivered on time, within budget, as specified. Revolutionary concept in this industry, apparently.',
     bg: 'bg-white text-black',
   },
 ];

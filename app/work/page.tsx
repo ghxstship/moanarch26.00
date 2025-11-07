@@ -12,51 +12,59 @@ import { FadeIn } from '@/components/animations/FadeIn';
 const projects = [
   {
     id: 1,
-    title: 'Formula 1 Miami Grand Prix',
-    client: 'Formula 1',
-    year: '2024',
-    vertical: 'Immersive Entertainment',
-    location: 'Miami, FL',
-  },
-  {
-    id: 2,
-    title: 'Insomniac EDC Experience',
+    title: 'Salvage City Supper Club at EDC Las Vegas',
     client: 'Insomniac',
     year: '2024',
     vertical: 'Immersive Entertainment',
     location: 'Las Vegas, NV',
   },
   {
-    id: 3,
-    title: 'PATRÓN Brand Activation',
-    client: 'PATRÓN',
-    year: '2023',
-    vertical: 'Experiential Marketing',
-    location: 'Multiple Locations',
-  },
-  {
-    id: 4,
-    title: 'Heineken Global Tour',
+    id: 2,
+    title: 'Heineken Turn4 Nightclub at Formula 1 Las Vegas Grand Prix',
     client: 'Heineken',
     year: '2023',
     vertical: 'Experiential Marketing',
-    location: 'Global',
+    location: 'Las Vegas, NV',
   },
   {
-    id: 5,
-    title: 'Red Bull Music Festival',
+    id: 3,
+    title: 'Red Bull Unforeseen Motel Nightclub at III Points Miami',
     client: 'Red Bull',
     year: '2023',
     vertical: 'Immersive Entertainment',
-    location: 'Multiple Cities',
+    location: 'Miami, FL',
+  },
+  {
+    id: 4,
+    title: 'PATRÓN Cristalino North American Launch with Becky G at Olvera Street',
+    client: 'PATRÓN',
+    year: '2023',
+    vertical: 'Experiential Marketing',
+    location: 'Los Angeles, CA',
+  },
+  {
+    id: 5,
+    title: 'Factory Town Miami',
+    client: 'Factory Town',
+    year: '2023-2024',
+    vertical: 'Immersive Entertainment',
+    location: 'Miami, FL',
   },
   {
     id: 6,
-    title: 'Tech Conference Production',
-    client: 'Various',
-    year: '2024',
-    vertical: 'Integrated Technology',
-    location: 'San Francisco, CA',
+    title: 'Formula 1 Las Vegas Grand Prix',
+    client: 'Formula 1',
+    year: '2023',
+    vertical: 'Experiential Marketing',
+    location: 'Las Vegas, NV',
+  },
+  {
+    id: 7,
+    title: 'Maiden Voyage of Celebrity Cruises Celebrity Beyond',
+    client: 'Celebrity Cruises',
+    year: '2022',
+    vertical: 'Immersive Entertainment',
+    location: 'Caribbean',
   },
 ];
 
@@ -82,9 +90,9 @@ export default function WorkPage() {
                   Proof Over Promise
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-xl">
-                  We&apos;ve delivered festival infrastructure across 52 countries, managed F1 hospitality operations, 
-                  and built brand activations for PATRÓN, Heineken, and Red Bull. Every project solved problems 
-                  that shouldn&apos;t technically work—but absolutely do.
+                  Fifty-two countries. Hundreds of projects. More &quot;that&apos;s impossible&quot; moments than we can count—all 
+                  of which we made possible anyway. Every project solved problems that shouldn&apos;t technically work. 
+                  But they do. Because we made them.
                 </Typography>
               </div>
             </SlideUp>

@@ -117,7 +117,8 @@ export default function ServicesPage() {
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-xl">
                   Seven phases from vision to victory. Our operational process refined through 13 years of solving 
-                  problems that emerge at 3 AM during setup. Discover. Design. Develop. Deliver. Direct. Disrupt. Dominate.
+                  problems that emerge at 3 AM during setup. Also refined through countless moments of &quot;this shouldn&apos;t 
+                  work&quot; followed by &quot;but it does.&quot; Discover. Design. Develop. Deliver. Direct. Disrupt. Dominate.
                 </Typography>
               </div>
             </SlideUp>

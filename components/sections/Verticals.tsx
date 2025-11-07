@@ -45,9 +45,9 @@ export function Verticals() {
               The Fleet
             </Typography>
             <Typography variant="body" className="text-grey-600 max-w-2xl mx-auto">
-              Four operational verticals. Festival production, theatrical installations, and pop-up experiences 
-              that redefine spaces. We create the moments that become legends—executed with precision that makes 
-              the impossible look inevitable.
+              Four operational verticals. Festival production that shouldn&apos;t stand up but does. Theatrical 
+              installations that make people question reality. Pop-up experiences that redefine spaces. We create 
+              the moments that become legends—executed with precision that makes the impossible look easy. It&apos;s not.
             </Typography>
           </div>
         </FadeIn>

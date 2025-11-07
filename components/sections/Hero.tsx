@@ -48,9 +48,9 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <Typography variant="body" className="text-grey-400 max-w-2xl mx-auto mb-12">
-              We&apos;ve delivered festival infrastructure across 52 countries, managed F1 hospitality operations, 
-              and built brand activations for Fortune 500s. Thirteen years of solving 3 AM problems taught us 
-              that impossible just means nobody&apos;s figured out the logistics yet.
+              Thirteen years. Fifty-two countries. More 3 AM crisis calls than we care to count. 
+              We&apos;ve built festival stages that defied physics, managed hospitality operations where failure 
+              wasn&apos;t an option, and turned &quot;that&apos;s impossible&quot; into &quot;when do you need it by?&quot;
             </Typography>
           </motion.div>
 

@@ -60,7 +60,8 @@ export default function InnovationsPage() {
                 <Typography variant="body" className="text-grey-400 text-xl">
                   The best competitive advantage is building what doesn&apos;t exist yet. Production management 
                   platforms that understand reality, not just project theory. Tools built by crews who&apos;ve 
-                  managed load-in at 3 AM and know what actually matters.
+                  managed load-in at 3 AM, solved problems with duct tape and prayer, and know what actually matters 
+                  when everything&apos;s on fire. Metaphorically. Usually.
                 </Typography>
               </div>
             </SlideUp>

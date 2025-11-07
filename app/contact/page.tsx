@@ -92,9 +92,9 @@ export default function ContactPage() {
                   Chart Your Course
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-xl">
-                  We&apos;ve navigated 52 countries and solved problems that emerge at 3 AM during setup. 
-                  If you&apos;ve got the vision, we&apos;ve got the operational chops to make it real. 
-                  Tell us about your project.
+                  Fifty-two countries. More 3 AM crisis calls than we care to count. If you&apos;ve got the vision 
+                  and the budget, we&apos;ve got the operational chops and the audacity to make it real. 
+                  Tell us about your project. We&apos;ll tell you if it&apos;s possible. Spoiler: it probably is.
                 </Typography>
               </div>
             </SlideUp>

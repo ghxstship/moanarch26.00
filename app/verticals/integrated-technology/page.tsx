@@ -7,7 +7,7 @@ export default function IntegratedTechnologyPage() {
     <VerticalTemplate
       title="Integrated Technology"
       subtitle="Custom Platforms // AR/VR // Real-Time Systems"
-      description="Custom platforms, AR/VR experiences, interactive installations, and real-time systems. We architect technical infrastructure that enables experiences while remaining invisible to end users. The best technology is the kind audiences never think about—they just experience what shouldn't be possible."
+      description="Custom platforms, AR/VR experiences, interactive installations, and real-time systems. We architect technical infrastructure that enables experiences while remaining invisible to end users. The best technology is the kind audiences never think about—they just experience what shouldn't be possible and assume it's magic. It's not magic. It's engineering and duct tape. Mostly engineering."
       services={[
         'AV System Design',
         'Interactive Installations',
