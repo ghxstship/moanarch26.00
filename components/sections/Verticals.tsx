@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { useRouter } from 'next/navigation';
 import { Typography } from '../ui/Typography';
 import { Container } from '../layout/Container';
 import { Card } from '../ui/Card';
@@ -11,25 +12,30 @@ const verticals = [
     title: 'Immersive Entertainment',
     metadata: 'Concerts // Festivals // Tours // Theatrical',
     image: '/images/verticals/immersive.jpg',
+    href: '/verticals/immersive-entertainment',
   },
   {
     title: 'Experiential Marketing',
     metadata: 'Brand Activations // Pop-ups // Installations',
     image: '/images/verticals/experiential.jpg',
+    href: '/verticals/experiential-marketing',
   },
   {
     title: 'Creative Media',
     metadata: 'Film // Video // Photography // Content',
     image: '/images/verticals/media.jpg',
+    href: '/verticals/creative-media',
   },
   {
     title: 'Integrated Technology',
     metadata: 'AV Systems // Interactive Tech // Digital',
     image: '/images/verticals/technology.jpg',
+    href: '/verticals/integrated-technology',
   },
 ];
 
 export function Verticals() {
+  const router = useRouter();
   return (
     <section className="py-24 bg-white">
       <Container>
@@ -53,7 +59,7 @@ export function Verticals() {
                 title={vertical.title}
                 metadata={vertical.metadata}
                 image={vertical.image}
-                onClick={() => console.log(`Navigate to ${vertical.title}`)}
+                onClick={() => router.push(vertical.href)}
               />
             </FadeIn>
           ))}

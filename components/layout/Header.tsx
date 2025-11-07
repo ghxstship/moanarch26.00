@@ -47,9 +47,11 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
-            <Button variant="outlined" size="sm" className="border-white text-white hover:bg-white hover:text-black">
-              Start a Project
-            </Button>
+            <Link href="/contact">
+              <Button variant="outlined" size="sm" className="border-white text-white hover:bg-white hover:text-black">
+                Start a Project
+              </Button>
+            </Link>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -102,9 +104,11 @@ export function Header() {
                     {item.label}
                   </Link>
                 ))}
-                <Button variant="outlined" size="lg" className="border-white text-white hover:bg-white hover:text-black mt-4">
-                  Start a Project
-                </Button>
+                <Link href="/contact">
+                  <Button variant="outlined" size="lg" className="border-white text-white hover:bg-white hover:text-black mt-4">
+                    Start a Project
+                  </Button>
+                </Link>
               </nav>
             </Container>
           </motion.div>

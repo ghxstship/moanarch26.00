@@ -19,11 +19,57 @@ export default function ContactPage() {
     timeline: '',
     message: '',
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Handle form submission
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+    setErrorMessage('');
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          company: formData.company,
+          message: formData.message,
+          formType: 'CONTACT',
+          projectType: formData.projectType,
+          projectBudget: formData.budget,
+          projectTimeline: formData.timeline,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({
+          name: '',
+          email: '',
+          company: '',
+          projectType: '',
+          budget: '',
+          timeline: '',
+          message: '',
+        });
+      } else {
+        setSubmitStatus('error');
+        setErrorMessage(data.error || 'Failed to submit form. Please try again.');
+      }
+    } catch {
+      setSubmitStatus('error');
+      setErrorMessage('Network error. Please check your connection and try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -150,8 +196,30 @@ export default function ContactPage() {
                   rows={6}
                 />
 
-                <Button type="submit" variant="filled" size="lg" className="w-full">
-                  Submit Project Inquiry
+                {submitStatus === 'success' && (
+                  <div className="p-4 bg-green-100 border-2 border-green-600 mb-6">
+                    <Typography variant="body" className="text-green-800">
+                      Thank you! Your message has been sent successfully. We&apos;ll get back to you soon.
+                    </Typography>
+                  </div>
+                )}
+
+                {submitStatus === 'error' && (
+                  <div className="p-4 bg-red-100 border-2 border-red-600 mb-6">
+                    <Typography variant="body" className="text-red-800">
+                      {errorMessage}
+                    </Typography>
+                  </div>
+                )}
+
+                <Button 
+                  type="submit" 
+                  variant="filled" 
+                  size="lg" 
+                  className="w-full"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? 'Submitting...' : 'Submit Project Inquiry'}
                 </Button>
               </form>
             </SlideUp>

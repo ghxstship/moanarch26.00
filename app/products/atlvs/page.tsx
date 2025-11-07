@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { Container } from '@/components/layout/Container';
@@ -57,12 +58,16 @@ export default function ATLVSPage() {
                   streamlines every aspect of project management from initial concept to final strike.
                 </Typography>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button variant="outlined" size="lg" className="border-white text-white hover:bg-white hover:text-black">
-                    Visit ATLVS.one
-                  </Button>
-                  <Button variant="outlined" size="lg" className="border-white text-white hover:bg-white hover:text-black">
-                    Request Demo
-                  </Button>
+                  <a href="https://atlvs.one" target="_blank" rel="noopener noreferrer">
+                    <Button variant="outlined" size="lg" className="border-white text-white hover:bg-white hover:text-black">
+                      Visit ATLVS.one
+                    </Button>
+                  </a>
+                  <Link href="/contact">
+                    <Button variant="outlined" size="lg" className="border-white text-white hover:bg-white hover:text-black">
+                      Request Demo
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </SlideUp>
@@ -161,12 +166,16 @@ export default function ATLVSPage() {
                 Experience the power of ATLVS with a personalized demo.
               </Typography>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="outlined" size="lg" className="border-white text-white hover:bg-white hover:text-black">
-                  Request Demo
-                </Button>
-                <Button variant="outlined" size="lg" className="border-white text-white hover:bg-white hover:text-black">
-                  Visit ATLVS.one
-                </Button>
+                <Link href="/contact">
+                  <Button variant="outlined" size="lg" className="border-white text-white hover:bg-white hover:text-black">
+                    Request Demo
+                  </Button>
+                </Link>
+                <a href="https://atlvs.one" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outlined" size="lg" className="border-white text-white hover:bg-white hover:text-black">
+                    Visit ATLVS.one
+                  </Button>
+                </a>
               </div>
             </div>
           </Container>

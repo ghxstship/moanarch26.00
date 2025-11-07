@@ -1,8 +1,7 @@
 'use client';
 
-'use client';
-
 import { useState } from 'react';
+import Link from 'next/link';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { Container } from '@/components/layout/Container';
@@ -160,9 +159,11 @@ export default function WorkPage() {
                 These are just a few highlights. Contact us to learn more about our full portfolio 
                 and how we can bring your vision to life.
               </Typography>
-              <button className="font-bebas uppercase tracking-wide px-8 py-4 text-lg border-2 border-white text-white hover:bg-white hover:text-black transition-all">
-                Get in Touch
-              </button>
+              <Link href="/contact">
+                <button className="font-bebas uppercase tracking-wide px-8 py-4 text-lg border-2 border-white text-white hover:bg-white hover:text-black transition-all">
+                  Get in Touch
+                </button>
+              </Link>
             </div>
           </Container>
         </section>

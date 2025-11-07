@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { Container } from '@/components/layout/Container';
@@ -10,6 +11,66 @@ import { SlideUp } from '@/components/animations/SlideUp';
 import { FadeIn } from '@/components/animations/FadeIn';
 
 export default function GVTEWAYPage() {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    company: '',
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+    setErrorMessage('');
+
+    try {
+      const response = await fetch('/api/newsletter/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: formData.email,
+          name: `${formData.firstName} ${formData.lastName}`.trim(),
+          metadata: {
+            company: formData.company,
+            source: 'GVTEWAY_WAITLIST',
+          },
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          company: '',
+        });
+      } else {
+        setSubmitStatus('error');
+        setErrorMessage(data.error || 'Failed to join waitlist. Please try again.');
+      }
+    } catch {
+      setSubmitStatus('error');
+      setErrorMessage('Network error. Please check your connection and try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
   return (
     <>
       <Header />
@@ -128,18 +189,24 @@ export default function GVTEWAYPage() {
                   Join the waitlist to get early access and exclusive updates on GVTEWAY&apos;s development.
                 </Typography>
               </div>
-              <form className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <Input
                     label="First Name"
                     name="firstName"
                     type="text"
+                    required
+                    value={formData.firstName}
+                    onChange={handleChange}
                     placeholder="Your first name"
                   />
                   <Input
                     label="Last Name"
                     name="lastName"
                     type="text"
+                    required
+                    value={formData.lastName}
+                    onChange={handleChange}
                     placeholder="Your last name"
                   />
                 </div>
@@ -147,16 +214,43 @@ export default function GVTEWAYPage() {
                   label="Email"
                   name="email"
                   type="email"
+                  required
+                  value={formData.email}
+                  onChange={handleChange}
                   placeholder="your@email.com"
                 />
                 <Input
                   label="Company"
                   name="company"
                   type="text"
+                  value={formData.company}
+                  onChange={handleChange}
                   placeholder="Your company (optional)"
                 />
-                <Button type="submit" variant="filled" size="lg" className="w-full">
-                  Join Waitlist
+                {submitStatus === 'success' && (
+                  <div className="p-4 bg-green-100 border-2 border-green-600">
+                    <Typography variant="body" className="text-green-800">
+                      Success! You&apos;re on the waitlist. We&apos;ll keep you updated on GVTEWAY&apos;s progress.
+                    </Typography>
+                  </div>
+                )}
+
+                {submitStatus === 'error' && (
+                  <div className="p-4 bg-red-100 border-2 border-red-600">
+                    <Typography variant="body" className="text-red-800">
+                      {errorMessage}
+                    </Typography>
+                  </div>
+                )}
+
+                <Button 
+                  type="submit" 
+                  variant="filled" 
+                  size="lg" 
+                  className="w-full"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? 'Joining...' : 'Join Waitlist'}
                 </Button>
               </form>
             </SlideUp>

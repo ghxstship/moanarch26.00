@@ -1,0 +1,143 @@
+'use client';
+
+import { Header } from '@/components/layout/Header';
+import { Footer } from '@/components/layout/Footer';
+import { Container } from '@/components/layout/Container';
+import { Typography } from '@/components/ui/Typography';
+import { Button } from '@/components/ui/Button';
+import { SlideUp } from '@/components/animations/SlideUp';
+import { FadeIn } from '@/components/animations/FadeIn';
+import Link from 'next/link';
+
+const products = [
+  {
+    id: 'atlvs',
+    name: 'ATLVS',
+    tagline: 'Production Management Platform',
+    description: 'Enterprise-grade production management software designed for experiential agencies. Streamline your workflow from concept to strike.',
+    features: [
+      'Project Management',
+      'Resource Allocation',
+      'Budget Tracking',
+      'Team Collaboration',
+      'Real-time Updates',
+      'Analytics Dashboard',
+    ],
+    status: 'Coming Soon',
+    href: '/products/atlvs',
+  },
+  {
+    id: 'gvteway',
+    name: 'GVTEWAY',
+    tagline: 'Client Portal & Collaboration Hub',
+    description: 'Seamless client collaboration platform that keeps everyone aligned. Share updates, approve deliverables, and track progress in real-time.',
+    features: [
+      'Client Dashboard',
+      'File Sharing',
+      'Approval Workflows',
+      'Communication Hub',
+      'Project Timeline',
+      'Asset Library',
+    ],
+    status: 'Coming Soon',
+    href: '/products/gvteway',
+  },
+];
+
+export default function ProductsPage() {
+  return (
+    <>
+      <Header />
+      <main className="pt-20">
+        {/* Hero Section */}
+        <section className="py-24 bg-black text-white">
+          <Container>
+            <SlideUp>
+              <div className="text-center max-w-3xl mx-auto">
+                <Typography variant="hero" className="text-white mb-6" uppercase>
+                  Our Products
+                </Typography>
+                <Typography variant="body" className="text-grey-400 text-xl">
+                  Purpose-built tools for the experiential production industry. 
+                  Born from our own needs, designed for the future.
+                </Typography>
+              </div>
+            </SlideUp>
+          </Container>
+        </section>
+
+        {/* Products Grid */}
+        <section className="py-24 bg-white">
+          <Container>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              {products.map((product, index) => (
+                <FadeIn key={product.id} delay={index * 0.1}>
+                  <div className="border-2 border-black bg-white p-8 hover:scale-[1.02] transition-transform duration-200">
+                    <div className="mb-6">
+                      <div className="flex items-start justify-between mb-4">
+                        <Typography variant="h2" uppercase>
+                          {product.name}
+                        </Typography>
+                        <span className="font-bebas uppercase text-sm px-3 py-1 border-2 border-black">
+                          {product.status}
+                        </span>
+                      </div>
+                      <Typography variant="h5" uppercase className="text-grey-600 mb-4">
+                        {product.tagline}
+                      </Typography>
+                      <Typography variant="body" className="text-grey-700 mb-6">
+                        {product.description}
+                      </Typography>
+                    </div>
+
+                    <div className="mb-8">
+                      <Typography variant="h6" uppercase className="mb-4">
+                        Key Features
+                      </Typography>
+                      <ul className="grid grid-cols-2 gap-3">
+                        {product.features.map((feature) => (
+                          <li key={feature}>
+                            <Typography variant="body" className="text-grey-700">
+                              • {feature}
+                            </Typography>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    <Link href={product.href}>
+                      <Button variant="outlined" size="lg" className="w-full">
+                        Learn More
+                      </Button>
+                    </Link>
+                  </div>
+                </FadeIn>
+              ))}
+            </div>
+          </Container>
+        </section>
+
+        {/* CTA Section */}
+        <section className="py-24 bg-black text-white">
+          <Container>
+            <div className="text-center">
+              <Typography variant="h1" uppercase className="text-white mb-6">
+                Interested in Early Access?
+              </Typography>
+              <Typography variant="body" className="text-grey-400 max-w-2xl mx-auto mb-8">
+                Be among the first to experience our production tools. 
+                Join the waitlist and help shape the future of experiential production software.
+              </Typography>
+              <Link href="/contact">
+                <Button variant="outlined" size="lg" className="border-white text-white hover:bg-white hover:text-black">
+                  Join Waitlist
+                </Button>
+              </Link>
+            </div>
+          </Container>
+        </section>
+      </main>
+      <Footer />
+    </>
+  );
+}

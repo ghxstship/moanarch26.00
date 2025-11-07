@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { Typography } from '../ui/Typography';
 import { Button } from '../ui/Button';
 import { Container } from '../layout/Container';
@@ -27,12 +28,16 @@ export function CTA() {
           </Typography>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="filled" size="lg">
-              Start a Project
-            </Button>
-            <Button variant="outlined" size="lg">
-              View Our Work
-            </Button>
+            <Link href="/contact">
+              <Button variant="filled" size="lg">
+                Start a Project
+              </Button>
+            </Link>
+            <Link href="/work">
+              <Button variant="outlined" size="lg">
+                View Our Work
+              </Button>
+            </Link>
           </div>
 
           <div className="mt-12 pt-12 border-t-2 border-grey-200">

@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { Container } from '@/components/layout/Container';
@@ -182,9 +183,11 @@ export default function ServicesPage() {
               <Typography variant="body" className="text-grey-400 max-w-2xl mx-auto mb-8">
                 Let&apos;s discuss how our 4 D&apos;s framework can bring your vision to life.
               </Typography>
-              <button className="font-bebas uppercase tracking-wide px-8 py-4 text-lg border-2 border-white text-white hover:bg-white hover:text-black transition-all">
-                Contact Us
-              </button>
+              <Link href="/contact">
+                <button className="font-bebas uppercase tracking-wide px-8 py-4 text-lg border-2 border-white text-white hover:bg-white hover:text-black transition-all">
+                  Contact Us
+                </button>
+              </Link>
             </div>
           </Container>
         </section>
