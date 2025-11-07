@@ -10,14 +10,26 @@ export default function ExperientialMarketingPage() {
       description="Brand activations that cut through noise because they respect audience intelligence. From Fortune 500 campaigns to emerging brand launches, we've delivered across six continents with proven ROI and genuine engagement. We make experiences people actually want to Instagram—not because we told them to, but because they can't help themselves."
       services={[
         'Brand Activations',
-        'Pop-up Experiences',
-        'Interactive Installations',
-        'Product Launches',
-        'Sampling Campaigns',
-        'Guerrilla Marketing',
-        'Retail Experiences',
-        'Trade Show Exhibits',
+        'Experiential Marketing Campaigns',
+        'Product Launch Events',
+        'Pop-Up Experiences',
+        'Interactive Brand Installations',
+        'Sampling & Demonstration Programs',
+        'Guerrilla Marketing Campaigns',
+        'Street Team Activations',
+        'Retail Experience Design',
+        'Trade Show Exhibits & Booths',
         'Sponsorship Activations',
+        'Festival & Concert Sponsorships',
+        'Sports Marketing Activations',
+        'Hospitality & VIP Experiences',
+        'Food & Beverage Operations',
+        'Mobile Tour Marketing',
+        'Influencer & Creator Events',
+        'Corporate Event Production',
+        'Brand Ambassador Programs',
+        'Environmental Graphics & Signage',
+        'Event Marketing Strategy',
       ]}
       examples={[
         {

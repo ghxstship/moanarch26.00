@@ -9,15 +9,27 @@ export default function ImmersiveEntertainmentPage() {
       subtitle="Festival Production // Theatrical Installations // Interactive Environments"
       description="Festival production that defies physics. Theatrical installations that make people question reality. Pop-up experiences that redefine what spaces can do. We create the moments that become legends—executed with precision that makes the impossible look easy. Spoiler: it's not easy. From 50,000+ capacity festival grounds to intimate theatrical environments, we've built infrastructure that makes structural engineers nervous and audiences lose their minds."
       services={[
-        'Concert Production',
-        'Festival Design & Build',
-        'World Tours',
-        'Theatrical Experiences',
+        'Festival Production & Design',
+        'Concert Production Management',
         'Live Event Production',
-        'Stage Design',
-        'Lighting & Visual Design',
-        'Audio Engineering',
-        'Artist Management Support',
+        'Theatrical Installations',
+        'Immersive Experiences',
+        'Pop-Up Venue Design & Build',
+        'Stage Design & Fabrication',
+        'Lighting Design & Programming',
+        'Audio Engineering & Sound Design',
+        'Video Production & LED Systems',
+        'Projection Mapping',
+        'Interactive Installations',
+        'Nightclub & Venue Operations',
+        'Artist & Talent Management',
+        'Tour Production Management',
+        'Technical Direction',
+        'Production Logistics',
+        'Load-In & Strike Coordination',
+        'Site Planning & Permitting',
+        'Crowd Flow & Safety Planning',
+        'Multi-Day Event Operations',
       ]}
       examples={[
         {

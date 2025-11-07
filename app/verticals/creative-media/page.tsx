@@ -9,15 +9,27 @@ export default function CreativeMediaPage() {
       subtitle="Video Production // Photography // Strategic Content"
       description="Visual storytelling for brands competing in saturated markets. Video production, photography, design, and digital content created by teams who understand both aesthetic excellence and strategic objectives. We've shot across 52 countries—every location taught us something about light, logistics, and what actually works when the sun sets in 20 minutes and the talent is late."
       services={[
-        'Film Production',
-        'Video Content',
-        'Photography',
-        'Documentary',
+        'Video Production',
         'Commercial Production',
-        'Social Media Content',
-        'Live Streaming',
-        'Post-Production',
-        'Motion Graphics',
+        'Documentary Filmmaking',
+        'Brand Films & Content',
+        'Event Videography',
+        'Live Streaming Production',
+        'Photography & Stills',
+        'Event Photography',
+        'Product Photography',
+        'Aerial Drone Cinematography',
+        'Social Media Content Creation',
+        'Short-Form Video Content',
+        'Post-Production & Editing',
+        'Color Grading & Correction',
+        'Motion Graphics & Animation',
+        'Visual Effects (VFX)',
+        'Sound Design & Audio Post',
+        'Music Video Production',
+        'Behind-the-Scenes Content',
+        'Recap & Highlight Videos',
+        'Content Strategy & Planning',
       ]}
       examples={[
         {
