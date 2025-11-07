@@ -109,7 +109,7 @@ export async function sendContactEmail(params: ContactEmailParams): Promise<void
   if (resend) {
     // Use Resend if API key is configured
     await resend.emails.send({
-      from: process.env.EMAIL_FROM_ADDRESS || 'hello@ghxstship.com',
+      from: process.env.EMAIL_FROM_ADDRESS || 'greetings@ghxstship.pro',
       to,
       subject: `[Contact Form] ${subject}`,
       html: htmlContent,
@@ -170,7 +170,7 @@ export async function sendWelcomeEmail(email: string, name: string): Promise<voi
 
   if (resend) {
     await resend.emails.send({
-      from: process.env.EMAIL_FROM_ADDRESS || 'hello@ghxstship.com',
+      from: process.env.EMAIL_FROM_ADDRESS || 'greetings@ghxstship.pro',
       to: email,
       subject: 'Welcome to GHXSTSHIP Industries',
       html: htmlContent,
@@ -221,7 +221,7 @@ export async function sendPasswordResetEmail(email: string, token: string): Prom
 
   if (resend) {
     await resend.emails.send({
-      from: process.env.EMAIL_FROM_ADDRESS || 'hello@ghxstship.com',
+      from: process.env.EMAIL_FROM_ADDRESS || 'greetings@ghxstship.pro',
       to: email,
       subject: 'Reset Your Password - GHXSTSHIP Industries',
       html: htmlContent,

@@ -34,10 +34,12 @@ export const metadata: Metadata = {
   title: "GHXSTSHIP Industries | Immersive Entertainment Production",
   description: "Global experiential production agency specializing in immersive entertainment, experiential marketing, creative media, and integrated technology. Design. Develop. Direct. Disrupt.",
   keywords: "experiential production, immersive entertainment, event production, brand activations, creative agency, Tampa",
+  metadataBase: new URL('https://ghxstship.tours'),
   openGraph: {
     title: 'GHXSTSHIP Industries',
     description: 'Charter the Uncharted',
     type: 'website',
+    url: 'https://ghxstship.tours',
   },
   twitter: {
     card: 'summary_large_image',

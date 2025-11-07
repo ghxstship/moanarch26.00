@@ -150,7 +150,7 @@ async function main() {
     prisma.systemSetting.create({
       data: {
         key: 'contact_email',
-        value: 'hello@ghxstship.com',
+        value: 'greetings@ghxstship.pro',
         description: 'Primary contact email',
         category: 'contact',
         isPublic: true,

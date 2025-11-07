@@ -42,7 +42,7 @@ Your site will be live in ~2 minutes at `your-project.vercel.app`
 ### Step 3: Custom Domain
 
 1. In Vercel dashboard, go to Project Settings → Domains
-2. Add your custom domain (e.g., `ghxstship.com`)
+2. Add your custom domain (e.g., `ghxstship.tours`)
 3. Follow DNS configuration instructions
 4. SSL certificate is automatically provisioned
 
@@ -227,7 +227,7 @@ npm run build
 ## 📞 Support
 
 For deployment issues:
-- Email: hello@ghxstship.com
+- Email: greetings@ghxstship.pro
 - Check Next.js documentation: https://nextjs.org/docs
 - Vercel support: https://vercel.com/support
 
