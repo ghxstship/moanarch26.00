@@ -28,7 +28,7 @@ const verticals = [
   },
   {
     title: 'Integrated Technology',
-    metadata: 'Custom Platforms // AR/VR // Real-Time Systems',
+    metadata: 'Full-Stack Development // Web3 // AR/VR // Data Architecture',
     image: '/images/verticals/technology.jpg',
     href: '/verticals/integrated-technology',
   },

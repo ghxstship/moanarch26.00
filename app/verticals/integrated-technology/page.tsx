@@ -6,39 +6,59 @@ export default function IntegratedTechnologyPage() {
   return (
     <VerticalTemplate
       title="Integrated Technology"
-      subtitle="Custom Platforms // AR/VR // Real-Time Systems"
-      description="Custom platforms, AR/VR experiences, interactive installations, and real-time systems. We architect technical infrastructure that enables experiences while remaining invisible to end users. The best technology is the kind audiences never think about—they just experience what shouldn't be possible and assume it's magic. It's not magic. It's engineering and duct tape. Mostly engineering."
+      subtitle="Full-Stack Development // Web3 // AR/VR // Custom Platforms // Data Architecture"
+      description="Full-stack application development, Web3 integration, AR/VR experiences, custom platforms, and data architecture that actually scales. We build digital infrastructure that handles real-world chaos—not just demo day traffic. From mobile apps to blockchain implementations to immersive experiences, we architect systems that work when it matters. The best technology is invisible until you need it, then it's bulletproof. We've migrated legacy systems that should've been retired a decade ago, implemented tech stacks that handle millions of transactions, and built platforms that make the impossible feel inevitable. It's not magic. It's architecture, engineering, and knowing which corners you can cut and which ones will collapse the whole thing."
       services={[
-        'AV System Design',
+        'Full-Stack Application Development',
+        'Mobile App Development (iOS/Android)',
+        'Web Application Design & Development',
+        'Progressive Web Apps (PWA)',
+        'Web3 & Blockchain Integration',
+        'Smart Contract Development',
+        'NFT Platform Architecture',
+        'AR/VR Experience Development',
+        'Mixed Reality Applications',
+        'Spatial Computing',
+        'Custom Platform Architecture',
+        'API Development & Integration',
+        'Microservices Architecture',
+        'Cloud Infrastructure (AWS/Azure/GCP)',
+        'Database Architecture & Optimization',
+        'Data Migration & ETL Pipelines',
+        'Legacy System Modernization',
+        'Tech Stack Implementation',
+        'DevOps & CI/CD Pipelines',
+        'Real-Time Systems & WebSockets',
         'Interactive Installations',
-        'Digital Integration',
-        'LED & Video Walls',
+        'Digital Signage Networks',
+        'AV System Design & Integration',
+        'LED & Video Wall Systems',
         'Projection Mapping',
-        'Audio Engineering',
         'Network Infrastructure',
-        'Control Systems',
-        'Technical Direction',
+        'Cybersecurity Implementation',
+        'Performance Optimization',
+        'Technical Direction & Consulting',
       ]}
       examples={[
         {
-          title: 'Interactive Brand Experience',
-          client: 'Tech Company',
-          description: 'Multi-room interactive experience featuring gesture control, AR elements, and synchronized AV systems.',
+          title: 'Enterprise Data Migration & Platform Rebuild',
+          client: 'Fortune 500 Corporation',
+          description: 'Full-stack platform modernization. Migrated 15 years of legacy data, rebuilt entire tech stack on cloud infrastructure, implemented microservices architecture. Zero downtime during migration. System now handles 10x the traffic with better performance than the old one ever had.',
         },
         {
-          title: 'Large-Scale Projection Mapping',
-          client: 'Cultural Institution',
-          description: 'Architectural projection mapping installation transforming a historic building into an immersive canvas.',
+          title: 'Web3 NFT Marketplace & Smart Contract Platform',
+          client: 'Entertainment Brand',
+          description: 'Custom blockchain platform development. Built NFT marketplace with smart contract integration, wallet connectivity, and real-time minting capabilities. Handled launch day traffic that crashed other platforms. Ours didn\'t blink.',
         },
         {
-          title: 'Conference AV Production',
-          client: 'Global Corporation',
-          description: 'Complete technical production for multi-day conference including live streaming, LED walls, and interactive elements.',
+          title: 'Cross-Platform Mobile App & Backend Infrastructure',
+          client: 'Hospitality Group',
+          description: 'Native iOS/Android app development with custom backend API. Real-time booking system, payment processing, push notifications, offline functionality. Deployed across 50+ locations. Scales beautifully. Works flawlessly. Revolutionary concept.',
         },
         {
-          title: 'Permanent Installation',
-          client: 'Museum',
-          description: 'Permanent interactive technology installation featuring touch screens, motion sensors, and immersive audio.',
+          title: 'AR/VR Brand Experience & Interactive Installation',
+          client: 'Luxury Automotive',
+          description: 'Mixed reality showroom experience. Custom AR app for vehicle customization, VR test drive simulator, interactive projection mapping. Gesture control, spatial audio, synchronized multi-screen displays. Technology so seamless people forgot it was there.',
         },
       ]}
     />
