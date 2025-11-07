@@ -46,7 +46,7 @@ export function CTA() {
               Headquarters
             </Typography>
             <Typography variant="body" className="text-grey-700">
-              Tampa, FL // Global Remote Team
+              Tampa, FL // Global Team
             </Typography>
           </div>
         </motion.div>

@@ -47,7 +47,7 @@ export function Hero() {
             className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
           >
             <Typography variant="meta" className="text-grey-500" uppercase>
-              Tampa, FL // Global Remote
+              Tampa, FL // Global
             </Typography>
             <Typography variant="meta" className="text-grey-500" uppercase>
               Est. 2022

@@ -61,7 +61,7 @@ export function Footer() {
               Charter the Uncharted.
             </Typography>
             <Typography variant="meta" className="text-grey-500" uppercase>
-              Tampa, FL // Global Remote
+              Tampa, FL // Global
             </Typography>
           </div>
 
