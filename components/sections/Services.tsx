@@ -1,9 +1,11 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { Typography } from '../ui/Typography';
 import { Container } from '../layout/Container';
 import { SlideUp } from '../animations/SlideUp';
+import { FadeIn } from '../animations/FadeIn';
 
 const services = [
   {
@@ -46,7 +48,30 @@ const services = [
 export function Services() {
   return (
     <section className="py-0">
-      {services.map((service) => (
+      {/* Header Section */}
+      <div className="min-h-screen flex items-center bg-black text-white">
+        <Container>
+          <FadeIn>
+            <div className="text-center max-w-4xl mx-auto">
+              <Typography variant="h1" uppercase className="mb-6 text-white">
+                The Itinerary
+              </Typography>
+              <Typography variant="body" className="text-grey-400 text-xl mb-12">
+                Seven phases from vision to victory. Our operational process refined through 13 years of solving 
+                problems that emerge at 3 AM during setup. Discover. Design. Develop. Deliver. Direct. Disrupt. Dominate.
+              </Typography>
+              <Link href="/services">
+                <button className="font-bebas uppercase tracking-wide px-8 py-4 text-lg border-2 border-white text-white hover:bg-white hover:text-black transition-all">
+                  Explore The Full Itinerary
+                </button>
+              </Link>
+            </div>
+          </FadeIn>
+        </Container>
+      </div>
+
+      {/* Services Preview - First 3 */}
+      {services.slice(0, 3).map((service) => (
         <div key={service.title} className={`min-h-screen flex items-center ${service.bg}`}>
           <Container>
             <SlideUp delay={0.2}>

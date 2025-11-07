@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Typography } from '../ui/Typography';
 import { Container } from '../layout/Container';
@@ -52,7 +53,7 @@ export function Verticals() {
           </div>
         </FadeIn>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {verticals.map((vertical, index) => (
             <FadeIn key={vertical.title} delay={index * 0.1}>
               <Card
@@ -65,6 +66,16 @@ export function Verticals() {
             </FadeIn>
           ))}
         </div>
+
+        <FadeIn delay={0.5}>
+          <div className="text-center">
+            <Link href="/verticals">
+              <button className="font-bebas uppercase tracking-wide px-8 py-4 text-lg border-2 border-black text-black hover:bg-black hover:text-white transition-all">
+                Explore The Full Fleet
+              </button>
+            </Link>
+          </div>
+        </FadeIn>
       </Container>
     </section>
   );

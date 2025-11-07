@@ -1,30 +1,32 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { Typography } from '../ui/Typography';
 import { Container } from '../layout/Container';
 import { SlideUp } from '../animations/SlideUp';
+import { FadeIn } from '../animations/FadeIn';
 
 const projects = [
   {
-    title: 'Formula 1 Miami Grand Prix',
-    metadata: 'Client: Formula 1 // Year: 2024 // Location: Miami',
-    image: '/images/projects/f1.jpg',
-  },
-  {
-    title: 'Insomniac EDC Experience',
-    metadata: 'Client: Insomniac // Year: 2024 // Location: Las Vegas',
+    title: 'Salvage City Supper Club at EDC Las Vegas',
+    metadata: 'Client: Insomniac // Year: 2024 // Location: Las Vegas, NV',
     image: '/images/projects/edc.jpg',
   },
   {
-    title: 'PATRÓN Brand Activation',
-    metadata: 'Client: PATRÓN // Year: 2023 // Location: Multiple',
-    image: '/images/projects/patron.jpg',
+    title: 'Heineken Turn4 Nightclub at F1 Las Vegas Grand Prix',
+    metadata: 'Client: Heineken // Year: 2023 // Location: Las Vegas, NV',
+    image: '/images/projects/heineken.jpg',
   },
   {
-    title: 'Heineken Global Tour',
-    metadata: 'Client: Heineken // Year: 2023 // Location: Global',
-    image: '/images/projects/heineken.jpg',
+    title: 'Red Bull Unforeseen Motel Nightclub at III Points Miami',
+    metadata: 'Client: Red Bull // Year: 2023 // Location: Miami, FL',
+    image: '/images/projects/redbull.jpg',
+  },
+  {
+    title: 'PATRÓN Cristalino North American Launch with Becky G',
+    metadata: 'Client: PATRÓN // Year: 2023 // Location: Los Angeles, CA',
+    image: '/images/projects/patron.jpg',
   },
 ];
 
@@ -35,16 +37,16 @@ export function FeaturedProjects() {
         <SlideUp>
           <div className="text-center mb-16">
             <Typography variant="h1" uppercase className="mb-4 text-white">
-              Featured Work
+              Our Passport
             </Typography>
             <Typography variant="body" className="text-grey-400 max-w-2xl mx-auto">
-              A selection of our most ambitious projects, pushing the boundaries of 
-              what&apos;s possible in experiential production.
+              Fifty-two countries. Hundreds of projects. More &quot;that&apos;s impossible&quot; moments than we can count—all 
+              of which we made possible anyway. Here&apos;s a glimpse of where we&apos;ve been.
             </Typography>
           </div>
         </SlideUp>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {projects.map((project, index) => (
             <SlideUp key={project.title} delay={index * 0.1}>
               <div className="border-2 border-white bg-black overflow-hidden hover:scale-[1.02] transition-transform duration-200 cursor-pointer">
@@ -68,6 +70,16 @@ export function FeaturedProjects() {
             </SlideUp>
           ))}
         </div>
+
+        <FadeIn delay={0.5}>
+          <div className="text-center">
+            <Link href="/work">
+              <button className="font-bebas uppercase tracking-wide px-8 py-4 text-lg border-2 border-white text-white hover:bg-white hover:text-black transition-all">
+                View Full Passport
+              </button>
+            </Link>
+          </div>
+        </FadeIn>
       </Container>
     </section>
   );
