@@ -89,11 +89,12 @@ export default function ContactPage() {
             <SlideUp>
               <div className="text-center max-w-3xl mx-auto">
                 <Typography variant="hero" className="text-white mb-6" uppercase>
-                  Let&apos;s Create
+                  Chart Your Course
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-xl">
-                  Ready to disrupt the industry? Tell us about your project and let&apos;s 
-                  create something impossible together.
+                  We&apos;ve navigated 52 countries and solved problems that emerge at 3 AM during setup. 
+                  If you&apos;ve got the vision, we&apos;ve got the operational chops to make it real. 
+                  Tell us about your project.
                 </Typography>
               </div>
             </SlideUp>

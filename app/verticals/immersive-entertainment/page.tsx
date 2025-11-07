@@ -6,8 +6,8 @@ export default function ImmersiveEntertainmentPage() {
   return (
     <VerticalTemplate
       title="Immersive Entertainment"
-      subtitle="Concerts // Festivals // Tours // Theatrical"
-      description="We create unforgettable entertainment experiences that transport audiences beyond reality. From intimate concerts to massive festivals, from world tours to theatrical productions, we design and deliver experiences that resonate long after the lights go down."
+      subtitle="Festival Production // Theatrical Installations // Interactive Environments"
+      description="Festival production, theatrical installations, and pop-up experiences that redefine spaces. We create the moments that become legends—executed with precision that makes the impossible look inevitable. From 50,000+ capacity festival grounds to intimate theatrical environments, we've built infrastructure that shouldn't technically work but absolutely does."
       services={[
         'Concert Production',
         'Festival Design & Build',

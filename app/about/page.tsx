@@ -36,18 +36,18 @@ export default function AboutPage() {
           <Container>
             <SlideUp>
               <Typography variant="hero" className="text-white mb-8" uppercase>
-                Our Story
+                Forged By Failure
               </Typography>
               <div className="max-w-4xl">
                 <Typography variant="body" className="text-grey-400 text-xl leading-relaxed mb-6">
-                  Founded in December 2022 and legally organized in July 2023, GHXSTSHIP Industries 
-                  emerged from a vision to transform the experiential production landscape. We&apos;re not 
-                  just another agency—we&apos;re architects of the impossible.
+                  Every legend starts somewhere. This one started with a kid who could read sheet music before 
+                  he could read maps—and ended up navigating experiences across 52 countries. This is how 
+                  impossible became inevitable.
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-xl leading-relaxed">
-                  Operating from Tampa, FL with a global remote team, we&apos;ve delivered experiences 
-                  across 52+ countries, pushing the boundaries of what&apos;s possible in immersive 
-                  entertainment, experiential marketing, creative media, and integrated technology.
+                  Thirteen years operating at the intersection of hospitality, live entertainment, and experiential 
+                  marketing taught us that the difference between epic and disaster is usually just better planning 
+                  and a crew that&apos;s seen it before.
                 </Typography>
               </div>
             </SlideUp>
@@ -74,52 +74,51 @@ export default function AboutPage() {
           </Container>
         </section>
 
-        {/* Mission Section */}
+        {/* Captain Jay Sea Section */}
         <section className="py-24 bg-black text-white">
           <Container>
-            <div className="grid md:grid-cols-2 gap-16">
+            <div className="max-w-4xl mx-auto">
               <SlideUp>
                 <Typography variant="h2" uppercase className="text-white mb-6">
-                  Mission
+                  Captain Jay Sea - CXO
+                </Typography>
+                <Typography variant="body" className="text-grey-400 text-lg leading-relaxed mb-6">
+                  Founder. 13 years operating at the intersection of hospitality, live entertainment, and 
+                  experiential marketing across 52 countries. Former F&B Operations Manager for Formula 1 
+                  Las Vegas Grand Prix. Production experience with Insomniac, F1, PATRÓN, Heineken, and Red Bull.
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-lg leading-relaxed">
-                  To create impossible experiences that transcend expectations, pushing the boundaries 
-                  of technology, creativity, and human connection. We don&apos;t follow trends—we create them.
-                </Typography>
-              </SlideUp>
-              <SlideUp delay={0.2}>
-                <Typography variant="h2" uppercase className="text-white mb-6">
-                  Vision
-                </Typography>
-                <Typography variant="body" className="text-grey-400 text-lg leading-relaxed">
-                  To be the global leader in experiential production, known for delivering the impossible 
-                  and setting new standards for what audiences can experience.
+                  Every challenging install taught something. Every impossible deadline revealed what&apos;s 
+                  actually possible. That accumulated knowledge became GHXSTSHIP. From classical musician to 
+                  cruise director to festival producer to brand strategist to technical architect—every chapter 
+                  built the next. Every lesson compounded.
                 </Typography>
               </SlideUp>
             </div>
           </Container>
         </section>
 
-        {/* The 4 D's Framework */}
+        {/* The Journey Framework */}
         <section className="py-24 bg-white">
           <Container>
             <FadeIn>
               <div className="text-center mb-16">
                 <Typography variant="h1" uppercase className="mb-4">
-                  Our 4D Approach
+                  The Journey
                 </Typography>
                 <Typography variant="body" className="text-grey-600 max-w-2xl mx-auto">
-                  Our comprehensive service framework that guides every project from concept to completion.
+                  From classical concert halls to cruise ships to festival grounds to F1 hospitality—every 
+                  chapter taught lessons that became operational advantages.
                 </Typography>
               </div>
             </FadeIn>
 
             <div className="grid md:grid-cols-2 gap-8">
               {[
-                { title: 'DESIGN', desc: 'Conceptual development & creative strategy' },
-                { title: 'DEVELOPMENT', desc: 'Build, fabricate, produce' },
-                { title: 'DIRECTION', desc: 'Execute, manage, deliver' },
-                { title: 'DISRUPTION', desc: 'Push boundaries, create the future' },
+                { title: 'INDIANA UNIVERSITY', desc: 'Classical musician learning precision and adaptability under pressure' },
+                { title: 'CARNIVAL CRUISE LINES', desc: 'Entertainment at scale—systems that work across floating cities' },
+                { title: 'INSOMNIAC EVENTS', desc: 'Festival production mastery—50,000+ capacity venues and impossible logistics' },
+                { title: 'F1 // PATRÓN // RED BULL', desc: 'Brand activations across 52 countries where excellence is mandatory' },
               ].map((item, index) => (
                 <SlideUp key={item.title} delay={index * 0.1}>
                   <div className="border-2 border-black p-8">
@@ -142,7 +141,10 @@ export default function AboutPage() {
             <FadeIn>
               <div className="text-center mb-16">
                 <Typography variant="h2" uppercase className="text-white mb-4">
-                  Trusted By Industry Leaders
+                  We&apos;ve Navigated With
+                </Typography>
+                <Typography variant="body" className="text-grey-400 max-w-2xl mx-auto">
+                  Production experience with brands that demand operational excellence and zero margin for error.
                 </Typography>
               </div>
             </FadeIn>

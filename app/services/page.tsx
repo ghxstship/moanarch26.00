@@ -10,55 +10,94 @@ import { FadeIn } from '@/components/animations/FadeIn';
 
 const services = [
   {
+    title: 'DISCOVER',
+    subtitle: 'Strategic Discovery & Market Analysis',
+    description: 'We map territory between ambitious vision and executable reality—understanding objectives, identifying constraints, designing experiences that move audiences while staying operationally achievable.',
+    capabilities: [
+      'Strategic Discovery',
+      'Market Analysis',
+      'Constraint Mapping',
+      'Feasibility Studies',
+      'Objective Alignment',
+      'Experience Design',
+    ],
+  },
+  {
     title: 'DESIGN',
-    subtitle: 'Conceptual Development & Creative Strategy',
-    description: 'We architect the impossible, transforming abstract ideas into tangible experiences that move audiences. Every concept begins with a question: what if?',
+    subtitle: 'Concept Development & Technical Feasibility',
+    description: 'Concept development backed by technical feasibility. Environmental design, experience mapping, visual identity creation, and journey architecture. Every element serves strategic objectives while maintaining creative integrity.',
     capabilities: [
-      'Creative Concepting',
-      'Brand Experiences',
-      'Spatial Design',
-      'Content Strategy',
-      'Visual Identity',
+      'Environmental Design',
       'Experience Mapping',
+      'Visual Identity',
+      'Journey Architecture',
+      'Technical Planning',
+      'Creative Strategy',
     ],
   },
   {
-    title: 'DEVELOPMENT',
-    subtitle: 'Production & Build',
-    description: 'From steel and stage to pixels and platforms, we build what others say can\'t be done. Our production teams turn visions into reality at global scale.',
+    title: 'DEVELOP',
+    subtitle: 'Production Execution at Scale',
+    description: 'Production execution where vision becomes tangible. Steel, pixels, fabric, circuits—whatever the medium, we engineer it at scale. Our teams build festival infrastructure, branded environments, custom platforms, and installations that shouldn&apos;t technically work but absolutely do.',
     capabilities: [
+      'Festival Infrastructure',
+      'Branded Environments',
+      'Custom Platforms',
+      'Technical Fabrication',
+      'Installation Build',
       'Production Management',
-      'Fabrication',
-      'Build-out',
-      'Technical Integration',
-      'Vendor Management',
-      'Quality Control',
     ],
   },
   {
-    title: 'DIRECTION',
-    subtitle: 'Operations & Execution',
-    description: 'Precision operations across continents. We orchestrate chaos into perfection, managing every detail from load-in to strike.',
+    title: 'DELIVER',
+    subtitle: 'Project Management as Operational Excellence',
+    description: 'Load-in schedules, vendor coordination, permit acquisition, contingency planning. We&apos;ve managed simultaneous productions across continents and solved 3 AM problems that would break other crews.',
     capabilities: [
-      'Operations Management',
-      'Logistics',
-      'On-site Execution',
-      'Talent Management',
-      'Safety Protocols',
+      'Load-in Management',
+      'Vendor Coordination',
+      'Permit Acquisition',
+      'Contingency Planning',
+      'Multi-site Operations',
+      'Crisis Management',
+    ],
+  },
+  {
+    title: 'DIRECT',
+    subtitle: 'On-site Technical Direction',
+    description: 'Our teams supervise every detail from first truck arrival to final strike, ensuring execution matches design intent and client expectations.',
+    capabilities: [
+      'Technical Direction',
+      'On-site Supervision',
+      'Quality Assurance',
       'Real-time Problem Solving',
+      'Crew Management',
+      'Strike Coordination',
     ],
   },
   {
-    title: 'DISRUPTION',
-    subtitle: 'Innovation & Future Tech',
-    description: 'Tomorrow\'s experiences, delivered today. We don\'t follow trends—we create them, pushing technology and creativity to their absolute limits.',
+    title: 'DISRUPT',
+    subtitle: 'Innovation Without Recklessness',
+    description: 'We deploy emerging technologies ahead of adoption curves, create experiences that set new industry standards, and push boundaries with proper engineering documentation and adequate insurance coverage.',
     capabilities: [
-      'Innovation Lab',
-      'Emerging Tech',
-      'R&D',
-      'Future-forward Concepts',
-      'Experimental Design',
-      'Technology Integration',
+      'Emerging Technology',
+      'Industry Innovation',
+      'Standards Setting',
+      'R&D Implementation',
+      'Risk Management',
+      'Future-forward Design',
+    ],
+  },
+  {
+    title: 'DOMINATE',
+    subtitle: 'Post-event Analysis & Continuous Improvement',
+    description: 'Performance metrics, lessons learned, evolution planning. Results that speak louder than promises—delivered on time, within budget, as specified.',
+    capabilities: [
+      'Performance Metrics',
+      'Post-event Analysis',
+      'Lessons Documentation',
+      'Evolution Planning',
+      'ROI Reporting',
+      'Continuous Improvement',
     ],
   },
 ];
@@ -74,11 +113,11 @@ export default function ServicesPage() {
             <SlideUp>
               <div className="text-center max-w-3xl mx-auto">
                 <Typography variant="hero" className="text-white mb-6" uppercase>
-                  Our Services
+                  The Itinerary
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-xl">
-                  The 4D Approach: Our comprehensive service framework that guides every project from concept to completion. 
-                  Design. Develop. Direct. Disrupt.
+                  Seven phases from vision to victory. Our operational process refined through 13 years of solving 
+                  problems that emerge at 3 AM during setup. Discover. Design. Develop. Deliver. Direct. Disrupt. Dominate.
                 </Typography>
               </div>
             </SlideUp>

@@ -6,8 +6,8 @@ export default function ExperientialMarketingPage() {
   return (
     <VerticalTemplate
       title="Experiential Marketing"
-      subtitle="Brand Activations // Pop-ups // Installations"
-      description="We transform brands into experiences that audiences can touch, feel, and remember. Our experiential marketing campaigns create emotional connections that drive engagement, loyalty, and measurable results."
+      subtitle="Brand Activations // Fortune 500 Campaigns // Six Continents"
+      description="Brand activations that cut through noise because they respect audience intelligence. From Fortune 500 campaigns to emerging brand launches, we've delivered across six continents with proven ROI and genuine engagement. PATRÓN, Heineken, Red Bull—brands that demand operational excellence and measurable results."
       services={[
         'Brand Activations',
         'Pop-up Experiences',

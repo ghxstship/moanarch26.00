@@ -6,8 +6,8 @@ export default function CreativeMediaPage() {
   return (
     <VerticalTemplate
       title="Creative Media"
-      subtitle="Film // Video // Photography // Content"
-      description="We tell stories that captivate, inspire, and move audiences. Our creative media services span the full spectrum of content production, from cinematic films to social media content, all crafted with the same attention to detail and creative excellence."
+      subtitle="Video Production // Photography // Strategic Content"
+      description="Visual storytelling for brands competing in saturated markets. Video production, photography, design, and digital content created by teams who understand both aesthetic excellence and strategic objectives. We've shot across 52 countries—every location taught us something about light, logistics, and what actually works."
       services={[
         'Film Production',
         'Video Content',

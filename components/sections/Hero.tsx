@@ -38,7 +38,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <Typography variant="h1" className="text-white mb-8" uppercase>
-              Charter the Uncharted
+              Navigate the Impossible
             </Typography>
           </motion.div>
 
@@ -48,8 +48,9 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <Typography variant="body" className="text-grey-400 max-w-2xl mx-auto mb-12">
-              Global experiential production agency specializing in immersive entertainment, 
-              experiential marketing, creative media, and integrated technology.
+              We&apos;ve delivered festival infrastructure across 52 countries, managed F1 hospitality operations, 
+              and built brand activations for Fortune 500s. Thirteen years of solving 3 AM problems taught us 
+              that impossible just means nobody&apos;s figured out the logistics yet.
             </Typography>
           </motion.div>
 

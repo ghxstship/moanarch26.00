@@ -55,11 +55,12 @@ export default function InnovationsPage() {
             <SlideUp>
               <div className="text-center max-w-3xl mx-auto">
                 <Typography variant="hero" className="text-white mb-6" uppercase>
-                  Our Innovations
+                  Building What Doesn&apos;t Exist Yet
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-xl">
-                  Purpose-built tools for the experiential production industry. 
-                  Born from our own needs, designed for the future.
+                  The best competitive advantage is building what doesn&apos;t exist yet. Production management 
+                  platforms that understand reality, not just project theory. Tools built by crews who&apos;ve 
+                  managed load-in at 3 AM and know what actually matters.
                 </Typography>
               </div>
             </SlideUp>

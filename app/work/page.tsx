@@ -79,11 +79,12 @@ export default function WorkPage() {
             <SlideUp>
               <div className="text-center max-w-3xl mx-auto">
                 <Typography variant="hero" className="text-white mb-6" uppercase>
-                  Our Showcase
+                  Proof Over Promise
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-xl">
-                  A portfolio of impossible experiences delivered across 52+ countries. 
-                  Each project pushes boundaries and sets new standards.
+                  We&apos;ve delivered festival infrastructure across 52 countries, managed F1 hospitality operations, 
+                  and built brand activations for PATRÓN, Heineken, and Red Bull. Every project solved problems 
+                  that shouldn&apos;t technically work—but absolutely do.
                 </Typography>
               </div>
             </SlideUp>

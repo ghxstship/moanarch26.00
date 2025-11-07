@@ -10,25 +10,25 @@ import { FadeIn } from '../animations/FadeIn';
 const verticals = [
   {
     title: 'Immersive Entertainment',
-    metadata: 'Concerts // Festivals // Tours // Theatrical',
+    metadata: 'Festival Production // Theatrical Installations // Interactive Environments',
     image: '/images/verticals/immersive.jpg',
     href: '/verticals/immersive-entertainment',
   },
   {
     title: 'Experiential Marketing',
-    metadata: 'Brand Activations // Pop-ups // Installations',
+    metadata: 'Brand Activations // Fortune 500 Campaigns // Six Continents',
     image: '/images/verticals/experiential.jpg',
     href: '/verticals/experiential-marketing',
   },
   {
     title: 'Creative Media',
-    metadata: 'Film // Video // Photography // Content',
+    metadata: 'Video Production // Photography // Strategic Content',
     image: '/images/verticals/media.jpg',
     href: '/verticals/creative-media',
   },
   {
     title: 'Integrated Technology',
-    metadata: 'AV Systems // Interactive Tech // Digital',
+    metadata: 'Custom Platforms // AR/VR // Real-Time Systems',
     image: '/images/verticals/technology.jpg',
     href: '/verticals/integrated-technology',
   },
@@ -42,11 +42,12 @@ export function Verticals() {
         <FadeIn>
           <div className="text-center mb-16">
             <Typography variant="h1" uppercase className="mb-4">
-              Our Verticals
+              The Fleet
             </Typography>
             <Typography variant="body" className="text-grey-600 max-w-2xl mx-auto">
-              Four core verticals where we deliver impossible experiences across digital, 
-              virtual, physical, experiential, and theatrical avenues.
+              Four operational verticals. Festival production, theatrical installations, and pop-up experiences 
+              that redefine spaces. We create the moments that become legends—executed with precision that makes 
+              the impossible look inevitable.
             </Typography>
           </div>
         </FadeIn>

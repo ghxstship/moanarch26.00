@@ -6,8 +6,8 @@ export default function IntegratedTechnologyPage() {
   return (
     <VerticalTemplate
       title="Integrated Technology"
-      subtitle="AV Systems // Interactive Tech // Digital Integration"
-      description="We harness cutting-edge technology to create seamless, interactive experiences. From complex AV systems to innovative digital integrations, we ensure that technology enhances rather than distracts from the experience."
+      subtitle="Custom Platforms // AR/VR // Real-Time Systems"
+      description="Custom platforms, AR/VR experiences, interactive installations, and real-time systems. We architect technical infrastructure that enables experiences while remaining invisible to end users. The best technology is the kind audiences never think about—they just experience what shouldn't be possible."
       services={[
         'AV System Design',
         'Interactive Installations',

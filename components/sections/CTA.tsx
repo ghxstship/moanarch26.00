@@ -19,12 +19,13 @@ export function CTA() {
           className="text-center"
         >
           <Typography variant="hero" uppercase className="mb-8">
-            Ready to Disrupt?
+            Chart Your Course
           </Typography>
           
           <Typography variant="body" className="text-grey-600 max-w-2xl mx-auto mb-12">
-            Let&apos;s create something impossible together. From concept to reality, 
-            we handle everything.
+            We&apos;ve navigated 52 countries, managed productions that shouldn&apos;t technically work, 
+            and solved problems that emerge at 3 AM during setup. If you&apos;ve got the vision, 
+            we&apos;ve got the operational chops to make it real.
           </Typography>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
