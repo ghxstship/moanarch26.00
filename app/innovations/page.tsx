@@ -9,7 +9,7 @@ import { SlideUp } from '@/components/animations/SlideUp';
 import { FadeIn } from '@/components/animations/FadeIn';
 import Link from 'next/link';
 
-const products = [
+const innovations = [
   {
     id: 'atlvs',
     name: 'ATLVS',
@@ -24,7 +24,7 @@ const products = [
       'Analytics Dashboard',
     ],
     status: 'Coming Soon',
-    href: '/products/atlvs',
+    href: '/innovations/atlvs',
   },
   {
     id: 'gvteway',
@@ -40,11 +40,11 @@ const products = [
       'Asset Library',
     ],
     status: 'Coming Soon',
-    href: '/products/gvteway',
+    href: '/innovations/gvteway',
   },
 ];
 
-export default function ProductsPage() {
+export default function InnovationsPage() {
   return (
     <>
       <Header />
@@ -55,7 +55,7 @@ export default function ProductsPage() {
             <SlideUp>
               <div className="text-center max-w-3xl mx-auto">
                 <Typography variant="hero" className="text-white mb-6" uppercase>
-                  Our Products
+                  Our Innovations
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-xl">
                   Purpose-built tools for the experiential production industry. 
@@ -66,27 +66,27 @@ export default function ProductsPage() {
           </Container>
         </section>
 
-        {/* Products Grid */}
+        {/* Innovations Grid */}
         <section className="py-24 bg-white">
           <Container>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              {products.map((product, index) => (
-                <FadeIn key={product.id} delay={index * 0.1}>
+              {innovations.map((innovation, index) => (
+                <FadeIn key={innovation.id} delay={index * 0.1}>
                   <div className="border-2 border-black bg-white p-8 hover:scale-[1.02] transition-transform duration-200">
                     <div className="mb-6">
                       <div className="flex items-start justify-between mb-4">
                         <Typography variant="h2" uppercase>
-                          {product.name}
+                          {innovation.name}
                         </Typography>
                         <span className="font-bebas uppercase text-sm px-3 py-1 border-2 border-black">
-                          {product.status}
+                          {innovation.status}
                         </span>
                       </div>
                       <Typography variant="h5" uppercase className="text-grey-600 mb-4">
-                        {product.tagline}
+                        {innovation.tagline}
                       </Typography>
                       <Typography variant="body" className="text-grey-700 mb-6">
-                        {product.description}
+                        {innovation.description}
                       </Typography>
                     </div>
 
@@ -95,7 +95,7 @@ export default function ProductsPage() {
                         Key Features
                       </Typography>
                       <ul className="grid grid-cols-2 gap-3">
-                        {product.features.map((feature) => (
+                        {innovation.features.map((feature) => (
                           <li key={feature}>
                             <Typography variant="body" className="text-grey-700">
                               • {feature}
@@ -105,7 +105,7 @@ export default function ProductsPage() {
                       </ul>
                     </div>
 
-                    <Link href={product.href}>
+                    <Link href={innovation.href}>
                       <Button variant="outlined" size="lg" className="w-full">
                         Learn More
                       </Button>

@@ -11,11 +11,11 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { label: 'About', href: '/about' },
-    { label: 'Services', href: '/services' },
-    { label: 'Work', href: '/work' },
+    { label: 'Innovations', href: '/innovations' },
     { label: 'Verticals', href: '/verticals' },
-    { label: 'Products', href: '/products' },
+    { label: 'Services', href: '/services' },
+    { label: 'Showcase', href: '/work' },
+    { label: 'About', href: '/about' },
     { label: 'Contact', href: '/contact' },
   ];
 

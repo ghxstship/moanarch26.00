@@ -79,7 +79,7 @@ export default function WorkPage() {
             <SlideUp>
               <div className="text-center max-w-3xl mx-auto">
                 <Typography variant="hero" className="text-white mb-6" uppercase>
-                  Our Work
+                  Our Showcase
                 </Typography>
                 <Typography variant="body" className="text-grey-400 text-xl">
                   A portfolio of impossible experiences delivered across 52+ countries. 

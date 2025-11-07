@@ -33,7 +33,7 @@ export default function NotFound() {
                 </Link>
                 <Link href="/work">
                   <Button variant="outlined" size="lg" className="border-white text-white hover:bg-white hover:text-black">
-                    View Our Work
+                    View Our Showcase
                   </Button>
                 </Link>
               </div>
