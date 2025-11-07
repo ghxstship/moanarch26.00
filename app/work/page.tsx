@@ -132,27 +132,29 @@ export default function WorkPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {filteredProjects.map((project, index) => (
                 <FadeIn key={project.id} delay={index * 0.05}>
-                  <div className="border-2 border-black bg-white overflow-hidden hover:scale-[1.02] transition-transform duration-200 cursor-pointer">
-                    <div className="relative w-full aspect-[4/3] bg-grey-200">
+                  <div className="border-2 border-black bg-white overflow-hidden hover:scale-[1.02] transition-transform duration-200 cursor-pointer h-full flex flex-col">
+                    <div className="relative w-full aspect-[4/3] bg-grey-200 flex-shrink-0">
                       <div className="absolute inset-0 flex items-center justify-center">
                         <Typography variant="h4" className="text-grey-500" uppercase>
                           Project Image
                         </Typography>
                       </div>
                     </div>
-                    <div className="p-6">
-                      <Typography variant="h4" uppercase className="mb-2">
+                    <div className="p-4 sm:p-6 flex-grow flex flex-col">
+                      <Typography variant="h4" uppercase className="mb-2 min-h-[3em] leading-tight text-sm sm:text-base">
                         {project.title}
                       </Typography>
-                      <Typography variant="meta" uppercase className="text-grey-600 block mb-1">
-                        Client: {project.client}
-                      </Typography>
-                      <Typography variant="meta" uppercase className="text-grey-600 block mb-1">
-                        {project.vertical}
-                      </Typography>
-                      <Typography variant="meta" uppercase className="text-grey-600 block">
-                        {project.year} {'//'} {project.location}
-                      </Typography>
+                      <div className="mt-auto">
+                        <Typography variant="meta" uppercase className="text-grey-600 block mb-1 text-xs sm:text-sm">
+                          Client: {project.client}
+                        </Typography>
+                        <Typography variant="meta" uppercase className="text-grey-600 block mb-1 text-xs sm:text-sm">
+                          {project.vertical}
+                        </Typography>
+                        <Typography variant="meta" uppercase className="text-grey-600 block text-xs sm:text-sm">
+                          {project.year} {'//'} {project.location}
+                        </Typography>
+                      </div>
                     </div>
                   </div>
                 </FadeIn>

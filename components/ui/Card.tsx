@@ -37,13 +37,13 @@ export function Card({
   if (type === 'project') {
     return (
       <motion.div
-        className={baseClasses}
+        className={`${baseClasses} h-full flex flex-col`}
         onClick={onClick}
         whileHover={{ scale: onClick ? 1.02 : 1 }}
         transition={{ duration: 0.2 }}
       >
         {image && (
-          <div className="relative w-full aspect-[16/9] overflow-hidden">
+          <div className="relative w-full aspect-[16/9] overflow-hidden flex-shrink-0">
             <Image
               src={image}
               alt={title}
@@ -52,12 +52,12 @@ export function Card({
             />
           </div>
         )}
-        <div className="p-4 sm:p-6 md:p-8">
-          <Typography variant="h4" uppercase className="mb-2 text-sm sm:text-base md:text-lg leading-tight">
+        <div className="p-4 sm:p-6 md:p-8 flex-grow flex flex-col">
+          <Typography variant="h4" uppercase className="mb-2 text-sm sm:text-base md:text-lg leading-tight min-h-[2.5em]">
             {title}
           </Typography>
           {metadata && (
-            <Typography variant="meta" uppercase className="text-grey-600 text-xs sm:text-sm leading-tight break-words">
+            <Typography variant="meta" uppercase className="text-grey-600 text-xs sm:text-sm leading-tight break-words mt-auto">
               {metadata}
             </Typography>
           )}
@@ -69,21 +69,21 @@ export function Card({
   if (type === 'service') {
     return (
       <motion.div
-        className={`${baseClasses} p-4 sm:p-6 md:p-8`}
+        className={`${baseClasses} p-4 sm:p-6 md:p-8 h-full flex flex-col`}
         onClick={onClick}
         whileHover={{ scale: onClick ? 1.02 : 1 }}
         transition={{ duration: 0.2 }}
       >
         {icon && (
-          <div className="mb-3 sm:mb-4 text-black">
+          <div className="mb-3 sm:mb-4 text-black flex-shrink-0">
             {icon}
           </div>
         )}
-        <Typography variant="h3" uppercase className="mb-3 sm:mb-4 text-base sm:text-lg md:text-xl leading-tight">
+        <Typography variant="h3" uppercase className="mb-3 sm:mb-4 text-base sm:text-lg md:text-xl leading-tight min-h-[2em]">
           {title}
         </Typography>
         {description && (
-          <Typography variant="body" className="text-grey-700 text-sm sm:text-base leading-relaxed">
+          <Typography variant="body" className="text-grey-700 text-sm sm:text-base leading-relaxed flex-grow">
             {description}
           </Typography>
         )}
